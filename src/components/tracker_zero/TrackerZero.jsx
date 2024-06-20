@@ -1,4 +1,4 @@
-import "./trackerZero.css";
+// import "./trackerZero.css";
 import GeneralInformation from "./GeneralInformation.jsx";
 import CountryTop from "./CountryTop";
 const TrackerZero = () => {
