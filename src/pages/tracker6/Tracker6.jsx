@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Tracker6 = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default Tracker6
+export default Tracker6;
