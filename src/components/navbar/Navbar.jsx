@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,16 +8,16 @@ const Navbar = () => {
       <div className="pl-0 pr-0 w-full border-r border-solid border-strongGray">
         <ul className="flex flex-col p-0 m-0 h-screen list-none">
           <li className="box-border mx-1 my-5 p-0">
-            <a
+            <NavLink
               className="leading-100 w-28 text-center inline-block mb-5 cursor-pointer content-center h-full"
-              href="src/pages/home/Home.jsx"
+              to="/"
             >
               <img
                 className="w-12 relative align-middle border-none m-auto"
                 src="../public/assets/images/coronavirus.png"
                 alt="logo covid"
               />
-            </a>
+            </NavLink>
           </li>
 
           <li className="mx-1 my-5 p-0 text-center">
