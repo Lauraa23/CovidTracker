@@ -77,6 +77,9 @@ export default {
       lineHeight: {
         100: "5.5rem",
       },
+      flex: {
+        auto: "auto",
+      },
     },
     plugins: [],
   },
