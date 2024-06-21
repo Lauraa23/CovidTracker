@@ -97,14 +97,14 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="group flex-auto mx-1 my-5 p-0 text-center">
+          <li className="flex-auto mx-1 my-5 p-0 text-center">
             <NavLink
               to="/"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
-              <i className="ti-comment group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-comment hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
           <li className="group mx-1 my-5 p-0 text-center">
