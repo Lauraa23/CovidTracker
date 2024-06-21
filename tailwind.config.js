@@ -25,6 +25,9 @@ export default {
         danger: "#E50202",
         light: "#F8F9FE",
         dark: "#262F5A",
+        even: "#fff",
+        odd: "#F8F9FE",
+        sorting_1: "#f1f1f1",
       },
       fontFamily: {
         sans: [

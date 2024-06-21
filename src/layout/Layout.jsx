@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import TrackerZero from "../components/tracker_zero/TrackerZero.jsx";
 const Layout = () => {
   return (
-    <div className="bg-blue">
+    <div>
       {/* <Navbar />
       <TrackerZero /> */}
       <main>
