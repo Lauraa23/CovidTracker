@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#root {
+  opacity: 1;
+  transition: all 0.25s ease-in;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+#header {
+  background: url("/assets/images/3626307.jpg") center center / cover no-repeat;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-position: center;
+}
+
+#navbarHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: start;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+.navbarItems {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.navbarItems li {
+  cursor: pointer;
+  color: white;
+}
+
+.navbarItems a {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #2d2f91;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbarItems a:hover {
+  background-color: #1565c0;
+}
+
+.logoNavbar {
+  height: 1rem;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.messageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 30%;
+}
+
+.messageSection h3 {
+  font-size: 1.8rem;
+  text-align: start;
+  font-weight: bold;
+}
+
+.messageSection p {
+  font-size: 0.75rem;
+  text-align: start;
+}
+
+.bannerRightImage {
+  width: 30vw;
+}
+
+#symptonWrapper {
+  background: aliceblue;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.basicSympton h2 {
+  font-size: 0.8rem;
+  color: #262f5a;
+}
+
+.basicSympton h3 {
+  font-size: 2rem;
+  color: #262f5a;
+}
+
+.symptomCarousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.symptomCard {
+  background-color: white;
+  padding: 10px 20px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 60px #0000001a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.symptomCard img {
+  width: 80px;
+}
+
+.symptomCard h4 {
+  font-size: 0.9rem;
+  color: #262f5a;
+}
+
+.symptomCard p {
+  font-size: 0.7rem;
+  margin: 0;
+  text-align: start;
+  color: #262f5a;
+}
+
+#preventWrapper {
+  background: #f0f0f0 !important;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.preventTitle h2 {
+  font-size: 0.8rem;
+  color: #262f5a;
+}
+
+.preventTitle h3 {
+  font-size: 2rem;
+  color: #262f5a;
+  font-weight: bold;
+}
+
+.preventWrapperContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.preventCardsLeft {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.preventCardsRight {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.preventExplanation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+}
+
+.preventExplanation img {
+  width: 7%;
+  position: absolute;
+}
+
+.preventExplanation h4 {
+  font-size: 0.9rem;
+  color: #262f5a;
+  font-weight: bold;
+}
+
+.preventExplanation p {
+  font-size: 0.75rem;
+  text-align: start;
+  color: #262f5a;
+}
+
+.mainImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.hexImageContainer {
+  height: 4em;
+  margin: 3.4641em 0;
+  position: relative;
+  width: 6.8em;
+  background-color: #fff;
+}
+
+.hexImageContainer:before {
+  border-right: 3.4641em solid transparent;
+  border-bottom: 2em solid #fff;
+  border-left: 3.4641em solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -2em;
+  width: 0;
+}
+
+.hexImageContainer:after {
+  border-top: 2em solid #fff;
+  border-right: 3.4641em solid transparent;
+  border-left: 3.4641em solid transparent;
+  bottom: -2em;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+
+.diseaseSpreadsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spreadsTitleCenter h2 {
+  font-size: 0.8rem;
+  color: #262f5a;
+}
+
+.spreadsTitleCenter h3 {
+  font-size: 1.5rem;
+  color: #262f5a;
+  font-weight: bold;
+}
+
+.spreadsCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.spreadPersonalCard {
+  background-color: white;
+  width: 20%;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 60px #a09fca73;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.spreadTextContent {
+  text-align: start;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.spreadImageContent {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.spreadPersonalCard img {
+  width: 100%;
+}
+
+.spreadTextContent p {
+  text-align: start;
+  font-size: 0.6rem;
+  color: #262f5a;
+}
+
+.spreadTextContent h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #262f5a;
+}
+
+#questionsWrapper {
+  background: url("assets/images/slide-1.jpg") center center / cover no-repeat
+    local;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  
+}
+
+#questionWrapper::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(to right, #1e0c9d, #06cdec);
+  opacity: 0.95;
+}
