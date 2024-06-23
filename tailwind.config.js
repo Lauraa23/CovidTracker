@@ -27,7 +27,7 @@ export default {
         dark: "#262F5A",
         even: "#fff",
         odd: "#F8F9FE",
-        sorting_1: "#f1f1f1",
+        flag: "#f1f1f1",
       },
       fontFamily: {
         sans: [

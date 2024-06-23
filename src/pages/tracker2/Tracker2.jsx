@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import "datatables.net";
-import "./../../datatable/datatables.min.css";
 
 const Tracker2 = () => {
   useEffect(() => {
@@ -18,11 +17,14 @@ const Tracker2 = () => {
       pageLength: 10, // Número de registros por página
       language: {
         lengthMenu: "Show _MENU_ entries",
-        info: "Showing _PAGE_ of _PAGES_ entries",
+        info: "",
         paginate: {
           first: "Previous",
           last: "Next",
         },
+      },
+      infoCallback: function (settings, start, end, max, total, pre) {
+        return `Showing ${start} to ${end} of ${total} entries`;
       },
     });
   }, []); // Dependencias vacías para que se ejecute solo una vez
@@ -204,24 +206,24 @@ zoom: 1;"
                 </tr>
               </thead>
               <tbody>
-                <tr role="row" className="odd">
-                  <td>
+                <tr role="row" className="bg-flag">
+                  <td className="bg-odd">
                     <img
                       src="https://disease.sh/assets/img/flags/us.png"
                       width="30"
                     />
                   </td>
-                  <td>USA</td>
-                  <td className="sorting_1">86503057</td>
-                  <td>0</td>
-                  <td>1033571</td>
-                  <td>0</td>
-                  <td>82527789</td>
-                  <td>2941697</td>
-                  <td>2756</td>
-                  <td>1033745991</td>
+                  <td className="bg-odd">USA</td>
+                  <td className="bg-odd">86503057</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">1033571</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">82527789</td>
+                  <td className="bg-odd">2941697</td>
+                  <td className="bg-odd">2756</td>
+                  <td className="bg-odd">1033745991</td>
                 </tr>
-                <tr role="row" className="even">
+                <tr role="row" className="bg-flag">
                   <td>
                     <img
                       src="https://disease.sh/assets/img/flags/in.png"
@@ -238,22 +240,22 @@ zoom: 1;"
                   <td>698</td>
                   <td>851338595</td>
                 </tr>
-                <tr role="row" className="odd">
-                  <td>
+                <tr role="row" className="bg-flag">
+                  <td className="bg-odd">
                     <img
                       src="https://disease.sh/assets/img/flags/br.png"
                       width="30"
                     />
                   </td>
-                  <td>Brazil</td>
-                  <td className="sorting_1">31153069</td>
-                  <td>0</td>
-                  <td>667044</td>
-                  <td>0</td>
-                  <td>30063682</td>
-                  <td>422343</td>
-                  <td>8318</td>
-                  <td>63776166</td>
+                  <td className="bg-odd">Brazil</td>
+                  <td className="bg-odd">31153069</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">667044</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">30063682</td>
+                  <td className="bg-odd">422343</td>
+                  <td className="bg-odd">8318</td>
+                  <td className="bg-odd">63776166</td>
                 </tr>
                 <tr role="row" className="even">
                   <td>
@@ -272,24 +274,24 @@ zoom: 1;"
                   <td>745</td>
                   <td>246065792</td>
                 </tr>
-                <tr role="row" className="odd">
-                  <td>
+                <tr role="row" className="bg-flag">
+                  <td className="bg-odd">
                     <img
                       src="https://disease.sh/assets/img/flags/de.png"
                       width="30"
                     />
                   </td>
-                  <td>Germany</td>
-                  <td className="sorting_1">26971653</td>
-                  <td>0</td>
-                  <td>140616</td>
-                  <td>0</td>
-                  <td>26412300</td>
-                  <td>195737</td>
-                  <td>1377</td>
-                  <td>122031736</td>
+                  <td className="bg-odd">Germany</td>
+                  <td className="bg-odd">26971653</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">140616</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">26412300</td>
+                  <td className="bg-odd">195737</td>
+                  <td className="bg-odd">1377</td>
+                  <td className="bg-odd">122031736</td>
                 </tr>
-                <tr role="row" className="even">
+                <tr role="row" className="bg-flag">
                   <td>
                     <img
                       src="https://disease.sh/assets/img/flags/uk.png"
@@ -306,24 +308,24 @@ zoom: 1;"
                   <td>293</td>
                   <td>522007436</td>
                 </tr>
-                <tr role="row" className="odd">
-                  <td>
+                <tr role="row" className="bg-flag">
+                  <td className="bg-odd">
                     <img
                       src="https://disease.sh/assets/img/flags/ru.png"
                       width="30"
                     />
                   </td>
-                  <td>Russia</td>
-                  <td className="sorting_1">18450929</td>
-                  <td>0</td>
-                  <td>381112</td>
-                  <td>0</td>
-                  <td>17919756</td>
-                  <td>350061</td>
-                  <td>0</td>
-                  <td>269400000</td>
+                  <td className="bg-odd">Russia</td>
+                  <td className="bg-odd">18450929</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">381112</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">17919756</td>
+                  <td className="bg-odd">350061</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">269400000</td>
                 </tr>
-                <tr role="row" className="even">
+                <tr role="row" className="bg-flag">
                   <td>
                     <img
                       src="https://disease.sh/assets/img/flags/kr.png"
@@ -340,26 +342,28 @@ zoom: 1;"
                   <td>117</td>
                   <td>118321617</td>
                 </tr>
-                <tr role="row" className="odd">
-                  <td>
+                <tr role="row">
+                  <td className="bg-odd">
                     <img
+                      className="bg-flag"
                       src="https://disease.sh/assets/img/flags/it.png"
                       width="30"
                     />
                   </td>
-                  <td>Italy</td>
-                  <td className="sorting_1">17619411</td>
-                  <td>0</td>
-                  <td>167780</td>
-                  <td>0</td>
-                  <td>17110612</td>
-                  <td>381019</td>
-                  <td>78</td>
-                  <td>232152381</td>
+                  <td className="bg-odd">Italy</td>
+                  <td className="bg-odd">17619411</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">167780</td>
+                  <td className="bg-odd">0</td>
+                  <td className="bg-odd">17110612</td>
+                  <td className="bg-odd">381019</td>
+                  <td className="bg-odd">78</td>
+                  <td className="bg-odd">232152381</td>
                 </tr>
                 <tr role="row" className="even">
                   <td>
                     <img
+                      className="bg-flag"
                       src="https://disease.sh/assets/img/flags/tr.png"
                       width="30"
                     />
