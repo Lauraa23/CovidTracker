@@ -22,7 +22,7 @@ const Navbar = () => {
 
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
-              to="/tracker1"
+              to="/trackers/1"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
@@ -33,7 +33,7 @@ const Navbar = () => {
 
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
-              to="/tracker2"
+              to="/trackers/2"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
@@ -44,7 +44,7 @@ const Navbar = () => {
 
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
-              to="/tracker3"
+              to="/trackers/3"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
@@ -55,7 +55,7 @@ const Navbar = () => {
 
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
-              to="/tracker4"
+              to="/trackers/4"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
