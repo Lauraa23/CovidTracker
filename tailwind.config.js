@@ -37,7 +37,7 @@ export default {
         lightOrange: "#fff9f1",
         lightGreen: "#edffec",
         lightBlue: "#eefbff",
-        patataBlue: "#b70102",
+        darkRed: "#b70102",
         electricBlue: "#2c6dff",
       },
       fontFamily: {

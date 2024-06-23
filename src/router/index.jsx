@@ -11,31 +11,31 @@ import Tracker6 from "../pages/tracker6/Tracker6.jsx";
 export const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   {
-    // path: "/tracker",
+    path: "/trackers",
     element: <Layout />,
     children: [
       {
-        path: "/tracker1",
+        path: "1",
         element: <Tracker1 />,
       },
       {
-        path: "/tracker2",
+        path: "2",
         element: <Tracker2 />,
       },
       {
-        path: "/tracker3",
+        path: "3",
         element: <Tracker3 />,
       },
       {
-        path: "/tracker4",
+        path: "4",
         element: <Tracker4 />,
       },
       {
-        path: "/tracker5",
+        path: "5",
         element: <Tracker5 />,
       },
       {
-        path: "/tracker6",
+        path: "6",
         element: <Tracker6 />,
       },
     ],

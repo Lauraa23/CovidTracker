@@ -5,7 +5,7 @@ export const NewDeaths = ({ children }) => {
     <Card>
       <CardImage src={"/assets/icons/covid-redark.svg"} />
       <CardTitle>New Deaths</CardTitle>
-      <CardData className="text-patataBlue">86503057</CardData>
+      <CardData className="text-darkRed">86503057</CardData>
     </Card>
   );
 };
