@@ -28,6 +28,18 @@ export default {
         even: "#fff",
         odd: "#F8F9FE",
         flag: "#f1f1f1",
+        strongGray: "#0000001a",
+        darkBlue: "#0c0c0d",
+        steel: "#888888",
+        lightRed: "#fff2f2",
+        navyBlue: "#1a1662",
+        whisper: "#eee",
+        brightRed: "#ff0000",
+        brightOrange: "#ff6a07",
+        brightGreen: "#82c519",
+        lightOrange: "#fff9f1",
+        lightGreen: "#edffec",
+        lightBlue: "#eefbff",
       },
       fontFamily: {
         sans: [
@@ -61,6 +73,12 @@ export default {
         breakpointLg: "992px",
         breakpointXl: "1200px",
         breakpointXxl: "1440",
+      },
+      boxShadow: {
+        md: "0px 1px 10px rgba(0, 0, 0, 0.06)",
+      },
+      lineHeight: {
+        100: "5.5rem",
       },
     },
     plugins: [],

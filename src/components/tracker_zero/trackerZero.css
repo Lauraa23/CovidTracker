@@ -95,17 +95,8 @@ b {
 }
 
 .scrollBar {
-  overflow: hidden;
   scrollbar-gutter: stable both-edges;
 }
-
-.scrollBar:focus,
-.scrollBar:hover,
-.scrollBar:active {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
 .scrollBar::-webkit-scrollbar {
   width: 3px;
 }
