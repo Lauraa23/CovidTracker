@@ -84,12 +84,11 @@ const Home = () => {
         </div>
       </section>
       <section id="preventWrapper">
-        
-          <div className="preventTitle">
-            <h2>Prevent</h2>
-            <h3>Best way to prevent is avoid virus.</h3>
-          </div>
-          <div className="preventWrapperContainer">
+        <div className="preventTitle">
+          <h2>Prevent</h2>
+          <h3>Best way to prevent is avoid virus.</h3>
+        </div>
+        <div className="preventWrapperContainer">
           <div className="preventCardsLeft">
             <div className="preventExplanation">
               <div className="mainImageContainer">
@@ -213,10 +212,7 @@ const Home = () => {
             </div>
             <div className="spreadPersonalCard">
               <div className="spreadImageContent">
-                <img
-                  src="/assets/images/p-6.jpg"
-                  alt="distance"
-                />
+                <img src="/assets/images/p-6.jpg" alt="distance" />
               </div>
               <div className="spreadTextContent">
                 <h4>Keep social distance</h4>
@@ -239,38 +235,24 @@ const Home = () => {
           <div className="questionsContentCards">
             <div className="questionsPanelGroupLeft">
               <div className="questionsPanelContent">
-                <div className="panelContentTitle">
-                  <h4>01. How does COVID-19 spread?</h4>
-                  <p>
-                    Data has shown that it spreads from person to person among
-                    those in close contact (within about 6 feet, or 2 meters).
-                    The virus spreads by respiratory droplets released when
-                    someone infected with the virus.
-                  </p>
-                </div>
+                <p>01. How does COVID-19 spread?</p>
               </div>
               <div className="questionsPanelContent">
-                <h4>02. What are the symptoms of COVID-19?</h4>
+                <p>02. What are the symptoms of COVID-19?</p>
               </div>
               <div className="questionsPanelContent">
-                <h4>03. Should I wear mask?</h4>
+                <p>03. Should I wear mask?</p>
               </div>
             </div>
             <div className="questionsPanelGroupRight">
               <div className="questionsPanelContent">
-                <h4>04. What does it mean to self-isolate?</h4>
+                <p>04. What does it mean to self-isolate?</p>
               </div>
               <div className="questionsPanelContent">
-                <h4>05. Can children or adolescents catch COVID-19?</h4>
+                <p>05. Can children or adolescents catch COVID-19?</p>
               </div>
-              <div className="panelContentTitle">
-                <h4>06. Is there a vaccine or drug for COVID-19?</h4>
-                <p>
-                  While some western, traditional or home remedies may provide
-                  comfort and alleviate symptoms of mild COVID-19, there are no
-                  medicines that have been shown to prevent or cure the disease.
-                  WHO does not recommend self-medication with any medicines.
-                </p>
+              <div className="questionsPanelContent">
+                <p>06. Is there a vaccine or drug for COVID-19?</p>
               </div>
             </div>
           </div>

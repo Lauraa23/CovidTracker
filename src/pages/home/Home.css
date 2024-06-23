@@ -10,7 +10,8 @@
 }
 
 #header {
-  background: url("/assets/images/3626307.jpg") center center / cover no-repeat;
+  background: linear-gradient(to right, #1e0c9db3, #06cdecb3),
+    url("/assets/images/3626307.jpg") center center / cover no-repeat local;
   color: white;
   text-align: center;
   display: flex;
@@ -310,21 +311,59 @@
 }
 
 #questionsWrapper {
-  background: url("assets/images/slide-1.jpg") center center / cover no-repeat
-    local;
+  background: linear-gradient(to right, #1e0c9db3, #06cdecb3),
+    url("assets/images/slide-1.jpg") center center / cover no-repeat local;
   background-position: center;
   position: relative;
-  background-size: cover;
-  
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#questionWrapper::after {
-  position: absolute;
-  left: 0;
-  top: 0;
+.questionsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.questionsTitle h2 {
+  font-size: 0.8rem;
+}
+
+.questionsTitle h3 {
+  font-size: 2rem;
+}
+
+.questionsContentCards {
+  display: flex;
   width: 100%;
-  height: 100%;
-  content: "";
-  background: linear-gradient(to right, #1e0c9d, #06cdec);
-  opacity: 0.95;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.questionsPanelGroupLeft {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.questionsPanelGroupRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.questionsPanelContent p {
+  font-size: 0.6rem;
+}
+
+.questionsPanelContent {
+  background-color: #1e0c9d80;
+  padding: 10px 10px;
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
