@@ -28,14 +28,6 @@ export const router = createBrowserRouter([
         path: "4",
         element: <Tracker4 />,
       },
-      {
-        path: "/tracker5",
-        element: <Tracker5 />,
-      },
-      {
-        path: "/tracker6",
-        element: <Tracker6 />,
-      },
     ],
   },
 ]);
