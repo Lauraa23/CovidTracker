@@ -39,7 +39,6 @@ export default {
         lightBlue: "#eefbff",
         patataBlue: "#b70102",
         electricBlue: "#2c6dff",
-
       },
       fontFamily: {
         sans: [
@@ -80,20 +79,19 @@ export default {
       lineHeight: {
         100: "5.5rem",
       },
-      animation:{
+      animation: {
         spinner: "spinner 5s infinite linear",
       },
-      keyframes:{
-        spinner:{
-          "0%":{
-            transform: "rotate(0deg)"
+      keyframes: {
+        spinner: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(359deg)",
+          },
         },
-        "100%":{
-            transform: "rotate(359deg)"
-        }
-        }
-      }
-
+      },
     },
     plugins: [],
   },
