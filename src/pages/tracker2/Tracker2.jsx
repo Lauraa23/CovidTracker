@@ -34,7 +34,7 @@ const Tracker2 = () => {
       className="flex-1 flex flex-col m-auto p-7 bg-light"
       /* chat-content active */
       id="table"
-      // tabIndex="3"
+      tabIndex="3"
       // className="overflow: hidden; outline: none;"
     >
       <div
