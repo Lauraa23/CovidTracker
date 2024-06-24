@@ -28,7 +28,6 @@ export const router = createBrowserRouter([
         path: "4",
         element: <Tracker4 />,
       },
-
     ],
   },
 ]);
