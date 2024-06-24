@@ -5,6 +5,8 @@ import { TotalDeaths } from "./TotalDeaths";
 import "./trackerOne.css";
 import { NewCases } from "./NewCases";
 import { NewDeaths } from "./NewDeaths";
+import { TotalRecovered } from "./TotalRecovered";
+import { TotalActive } from "./TotalActive";
 
 const TrackerOne = () => {
   const [data, setData] = useState({
