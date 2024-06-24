@@ -12,11 +12,13 @@ const Navbar = () => {
               to="/"
               className="leading-100 text-center inline-block mb-5 cursor-pointer content-center h-full"
             >
-              <img
-                className="w-12 relative align-middle border-none m-auto"
-                src="../public/assets/images/coronavirus.png"
-                alt="logo covid"
-              />
+              <div className="animate-spinner">
+                <img
+                  className="w-12 relative align-middle border-none m-auto"
+                  src="../public/assets/images/coronavirus.png"
+                  alt="logo covid"
+                />
+              </div>
             </NavLink>
           </li>
 
@@ -48,7 +50,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-view-grid group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
@@ -59,7 +60,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-layout-tab group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
@@ -70,7 +70,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-layers-alt group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
@@ -81,7 +80,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-stats-up group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
@@ -92,7 +90,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-world group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
@@ -103,7 +100,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-comment hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
@@ -113,7 +109,6 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
               <i className="ti-flickr-alt group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>

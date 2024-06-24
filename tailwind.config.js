@@ -81,6 +81,19 @@ export default {
         auto: "auto",
       },
     },
+    animation: {
+      spinner: "spinner 5s infinite linear",
+    },
+    keyframes: {
+      spinner: {
+        "0%": {
+          transform: "rotate(0deg)",
+        },
+        "100%": {
+          transform: "rotate(359deg)",
+        },
+      },
+    },
     plugins: [],
   },
 };
