@@ -267,10 +267,10 @@ const Home = () => {
               such as tables, doorknobs and handrails.
             </p>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>i</li>
+              <li>i</li>
+              <li>i</li>
+              <li>i</li>
             </ul>
           </div>
           <div className="quicLinks">
@@ -296,7 +296,7 @@ const Home = () => {
           </div>
         </div>
         <div className="lowerFooter">
-          <p>Copyright 2020. All Rights Reserved</p>
+          <p>© Copyright 2020. All Rights Reserved</p>
           <p>Design by COVIDongas</p>
         </div>
       </footer>

@@ -7,6 +7,9 @@
   position: relative;
   z-index: 1;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #header {
@@ -184,11 +187,6 @@
   text-align: left;
 }
 
-.preventExplanation img {
-  width: 7%;
-  position: absolute;
-}
-
 .preventExplanation h4 {
   font-size: 0.9rem;
   color: #262f5a;
@@ -207,6 +205,18 @@
   align-items: center;
   justify-content: center;
   width: 40%;
+  transition: transform 0.3s ease;
+}
+
+.mainImageContainer:hover .hexImageContainer,
+.mainImageContainer:hover img {
+  transform: scale(1.2);
+}
+
+.mainImageContainer img {
+  width: 7%;
+  position: absolute;
+  transition: transform 0.3s ease;
 }
 
 .hexImageContainer {
@@ -215,6 +225,7 @@
   position: relative;
   width: 6.8em;
   background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 .hexImageContainer:before {
@@ -366,4 +377,58 @@
   border: 1px rgba(255, 255, 255, 0.2) solid;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+footer {
+  background-color: #1b2a4e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.footerElementsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.covimapLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+}
+
+.covimapLogo img {
+  width: 6rem;
+}
+
+.covimapLogo ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.lowerFooter {
+  border-top: 1px solid #223461;
+  background: #1b2a4e;
+  padding: 5px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.lowerFooter p {
+  font-size: 0.4rem;
+  color: #fff;
 }
