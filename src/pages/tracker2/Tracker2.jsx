@@ -62,36 +62,11 @@ zoom: 1;"
             <div /* dataTables_length */
               className="float-left "
               id="CountryStatsDataTable_length"
-            >
-              {/* <label>
-                Show{" "}
-                <select
-                  name="CountryStatsDataTable_length"
-                  aria-controls="CountryStatsDataTable"
-                  className="border h-10 mx-2.5 my-0 px-[15px] py-[5px] border-solid border-[#ccc]"
-                >
-                  <option value="10">10</option>
-                  <option value="25">25</option>
-                  <option value="50">50</option>
-                  <option value="100">100</option>
-                </select>
-                entries
-              </label> */}
-            </div>
+            ></div>
             <div
               id="CountryStatsDataTable_filter"
               className="dataTables_filter"
-            >
-              {/* <label>
-                Search:
-                <input
-                  type="search"
-                  className=""
-                  placeholder=""
-                  aria-controls="CountryStatsDataTable"
-                />
-              </label> */}
-            </div>
+            ></div>
             <table
               id="CountryStatsDataTable"
               // className="display dataTable no-footer"
@@ -206,177 +181,339 @@ zoom: 1;"
                 </tr>
               </thead>
               <tbody>
-                <tr role="row" className="bg-flag">
-                  <td className="bg-odd">
+                <tr role="row" className="bg-odd group  ">
+                  <td className="bg-flag table-cell group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/us.png"
                       width="30"
                     />
                   </td>
-                  <td className="bg-odd">USA</td>
-                  <td className="bg-odd">86503057</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">1033571</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">82527789</td>
-                  <td className="bg-odd">2941697</td>
-                  <td className="bg-odd">2756</td>
-                  <td className="bg-odd">1033745991</td>
+                  <td className="bg-odd group-hover:bg-tableHover">USA</td>
+                  <td className="bg-odd group-hover:bg-tableHover">86503057</td>
+                  <td className="bg-odd group-hover:bg-tableHover">0</td>
+                  <td className="bg-odd group-hover:bg-tableHover">1033571</td>
+                  <td className="bg-odd group-hover:bg-tableHover">0</td>
+                  <td className="bg-odd group-hover:bg-tableHover">82527789</td>
+                  <td className="bg-odd group-hover:bg-tableHover">2941697</td>
+                  <td className="bg-odd group-hover:bg-tableHover">2756</td>
+                  <td className="bg-odd group-hover:bg-tableHover">
+                    1033745991
+                  </td>
                 </tr>
-                <tr role="row" className="bg-flag">
-                  <td>
+                <tr role="row" className="bg-even group">
+                  <td className="bg-flagLight border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/in.png"
                       width="30"
                     />
                   </td>
-                  <td>India</td>
-                  <td className="sorting_1">43178080</td>
-                  <td>0</td>
-                  <td>524651</td>
-                  <td>0</td>
-                  <td>42622757</td>
-                  <td>30672</td>
-                  <td>698</td>
-                  <td>851338595</td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    India
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    43178080
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    524651
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    42622757
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    30672
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    698
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    851338595
+                  </td>
                 </tr>
-                <tr role="row" className="bg-flag">
-                  <td className="bg-odd">
+                <tr role="row" className="bg-odd group">
+                  <td className="bg-flag border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/br.png"
                       width="30"
                     />
                   </td>
-                  <td className="bg-odd">Brazil</td>
-                  <td className="bg-odd">31153069</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">667044</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">30063682</td>
-                  <td className="bg-odd">422343</td>
-                  <td className="bg-odd">8318</td>
-                  <td className="bg-odd">63776166</td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    Brazil
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    31153069
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    667044
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    30063682
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    422343
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    8318
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    63776166
+                  </td>
                 </tr>
-                <tr role="row" className="even">
-                  <td>
+                <tr role="row" className="bg-even group">
+                  <td className="bg-flagLight border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/fr.png"
                       width="30"
                     />
                   </td>
-                  <td>France</td>
-                  <td className="sorting_1">29095086</td>
-                  <td>0</td>
-                  <td>147715</td>
-                  <td>0</td>
-                  <td>28863994</td>
-                  <td>346377</td>
-                  <td>745</td>
-                  <td>246065792</td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    France
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    29095086
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    147715
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    28863994
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    346377
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    745
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    246065792
+                  </td>
                 </tr>
-                <tr role="row" className="bg-flag">
-                  <td className="bg-odd">
+                <tr role="row" className="bg-odd group">
+                  <td className="bg-flag border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/de.png"
                       width="30"
                     />
                   </td>
-                  <td className="bg-odd">Germany</td>
-                  <td className="bg-odd">26971653</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">140616</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">26412300</td>
-                  <td className="bg-odd">195737</td>
-                  <td className="bg-odd">1377</td>
-                  <td className="bg-odd">122031736</td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    Germany
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    26971653
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    140616
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    26412300
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    195737
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    1377
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    122031736
+                  </td>
                 </tr>
-                <tr role="row" className="bg-flag">
-                  <td>
+                <tr role="row" className="bg-even group">
+                  <td className="bg-flagLight border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/uk.png"
-                      width="30"
+                      className="w-[30]"
                     />
                   </td>
-                  <td>UK</td>
-                  <td className="sorting_1">21930034</td>
-                  <td>0</td>
-                  <td>177977</td>
-                  <td>0</td>
-                  <td>246977</td>
-                  <td>37126</td>
-                  <td>293</td>
-                  <td>522007436</td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    UK
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    21930034
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    177977
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    246977
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    37126
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    293
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    522007436
+                  </td>
                 </tr>
-                <tr role="row" className="bg-flag">
-                  <td className="bg-odd">
+                <tr role="row" className="bg-odd group">
+                  <td className="bg-flag border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/ru.png"
                       width="30"
                     />
                   </td>
-                  <td className="bg-odd">Russia</td>
-                  <td className="bg-odd">18450929</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">381112</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">17919756</td>
-                  <td className="bg-odd">350061</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">269400000</td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    Russia
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    18450929
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    381112
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    17919756
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    350061
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    269400000
+                  </td>
                 </tr>
-                <tr role="row" className="bg-flag">
-                  <td>
+                <tr role="row" className="bg-even group">
+                  <td className="bg-flagLight border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
                       src="https://disease.sh/assets/img/flags/kr.png"
                       width="30"
                     />
                   </td>
-                  <td>South Korea</td>
-                  <td className="sorting_1">18248344</td>
-                  <td>0</td>
-                  <td>24279</td>
-                  <td>0</td>
-                  <td>15887763</td>
-                  <td>2354302</td>
-                  <td>117</td>
-                  <td>118321617</td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    South Korea
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    18248344
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    24279
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    15887763
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    2354302
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    117
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    118321617
+                  </td>
                 </tr>
-                <tr role="row">
-                  <td className="bg-odd">
+                <tr role="row" className="bg-odd group">
+                  <td className="bg-flag border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
-                      className="bg-flag"
                       src="https://disease.sh/assets/img/flags/it.png"
                       width="30"
                     />
                   </td>
-                  <td className="bg-odd">Italy</td>
-                  <td className="bg-odd">17619411</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">167780</td>
-                  <td className="bg-odd">0</td>
-                  <td className="bg-odd">17110612</td>
-                  <td className="bg-odd">381019</td>
-                  <td className="bg-odd">78</td>
-                  <td className="bg-odd">232152381</td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    Italy
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    17619411
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    167780
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    17110612
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    381019
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    78
+                  </td>
+                  <td className="bg-odd border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    232152381
+                  </td>
                 </tr>
-                <tr role="row" className="even">
-                  <td>
+                <tr role="row" className="bg-even group">
+                  <td className="bg-flagLight border-t-[#ddd] border-t border-solid group-hover:bg-flagHover">
                     <img
-                      className="bg-flag"
                       src="https://disease.sh/assets/img/flags/tr.png"
                       width="30"
                     />
                   </td>
-                  <td>Turkey</td>
-                  <td className="sorting_1">15074174</td>
-                  <td>0</td>
-                  <td>989996</td>
-                  <td>0</td>
-                  <td>14548230</td>
-                  <td>518948</td>
-                  <td>0</td>
-                  <td>162743369</td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    Turkey
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    15074174
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    989996
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    14548230
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    518948
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    0
+                  </td>
+                  <td className="border-t-[#ddd] border-t border-solid group-hover:bg-tableHover">
+                    162743369
+                  </td>
                 </tr>
               </tbody>
             </table>
