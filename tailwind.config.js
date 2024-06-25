@@ -25,6 +25,10 @@ export default {
         danger: "#E50202",
         light: "#F8F9FE",
         dark: "#262F5A",
+        cases: "#E5E6F6",
+        casesLight: "#ebebf7",
+        casesHover: "#D0D0EC",
+        tableHover: "#E1E1F3",
         strongGray: "#0000001a",
         darkBlue: "#0c0c0d",
         steel: "#888888",
@@ -79,17 +83,20 @@ export default {
       lineHeight: {
         100: "5.5rem",
       },
-      animation: {
-        spinner: "spinner 5s infinite linear",
+      flex: {
+        auto: "auto",
       },
-      keyframes: {
-        spinner: {
-          "0%": {
-            transform: "rotate(0deg)",
-          },
-          "100%": {
-            transform: "rotate(359deg)",
-          },
+    },
+    animation: {
+      spinner: "spinner 5s infinite linear",
+    },
+    keyframes: {
+      spinner: {
+        "0%": {
+          transform: "rotate(0deg)",
+        },
+        "100%": {
+          transform: "rotate(359deg)",
         },
       },
     },
