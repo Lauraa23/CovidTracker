@@ -19,31 +19,27 @@ const GeneralInformation = () => {
           title={"Total Case"}
           cases={data.cases}
           todayCases={data.todayCases}
-          textColor="brightRed"
-          bgColor="lightRed"
+          variant="total-case"
         />
 
         <InformationCard
           title={"Active Case"}
           cases={data.active}
-          textColor="brightOrange"
-          bgColor="lightOrange"
+          variant="active-case"
         />
 
         <InformationCard
           title={"Recovered Case"}
           cases={data.recovered}
           todayCases={data.todayRecovered}
-          textColor="brightGreen"
-          bgColor="lightGreen"
+          variant="recovered-case"
         />
 
         <InformationCard
           title={"Deaths Case"}
           cases={data.deaths}
           todayCases={data.todayDeaths}
-          textColor="primary"
-          bgColor="lightBlue"
+          variant="death-case"
         />
       </ul>
     </>
