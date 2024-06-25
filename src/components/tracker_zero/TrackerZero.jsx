@@ -1,4 +1,4 @@
-// import "./trackerZero.css";
+import "./trackerZero.css";
 import GeneralInformation from "./GeneralInformation.jsx";
 import TopCountries from "./TopCountries";
 
