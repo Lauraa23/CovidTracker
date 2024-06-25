@@ -1,28 +1,31 @@
 import * as React from "react";
 import WorldMap from "react-svg-worldmap";
+import useApi from "../../services/useApi";
+import { API_BASE_URL } from "../../config/urls";
+import "./map.css";
 
 export default function Map() {
-  const data = [
-    { country: "cn", value: 1389618778 }, // china
-    { country: "in", value: 1311559204 }, // india
-    { country: "us", value: 331883986 }, // united states
-    { country: "id", value: 264935824 }, // indonesia
-    { country: "pk", value: 210797836 }, // pakistan
-    { country: "br", value: 210301591 }, // brazil
-    { country: "ng", value: 208679114 }, // nigeria
-    { country: "bd", value: 161062905 }, // bangladesh
-    { country: "ru", value: 141944641 }, // russia
-    { country: "mx", value: 127318112 }, // mexico
-  ];
+  const data = useApi(`${API_BASE_URL}/countries`);
+  console.log(data);
 
+  if (!data) {
+    return <p>Cargando ...</p>;
+  }
+  const filterCountries = data.filter((country) => {
+    return country.countryInfo.iso2;
+  });
+  console.log(filterCountries);
+  const countries = filterCountries.map((country) => ({
+    country: country.countryInfo.iso2,
+  }));
+  console.log(countries);
   return (
-    <div className="App">
+    <div className="map" id="map">
       <WorldMap
-        color="red"
-        title="Top 10 Populous Countries"
-        value-suffix="people"
+        className="fill-primary country opacity-100"
+        color="lightBlue"
         size="lg"
-        data={data}
+        data={countries}
       />
     </div>
   );

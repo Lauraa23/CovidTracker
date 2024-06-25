@@ -1,0 +1,8 @@
+#map > figure.worldmap__figure-container > svg > g > path {
+  fill: rgba(13, 110, 253, 0.918);
+  fill-opacity: 1 !important;
+  stroke: black;
+  stroke-width: 1;
+  stroke-opacity: 0.2;
+  cursor: pointer;
+}
