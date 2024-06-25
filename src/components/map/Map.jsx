@@ -17,6 +17,7 @@ export default function Map() {
   console.log(filterCountries);
   const countries = filterCountries.map((country) => ({
     country: country.countryInfo.iso2,
+    countryName: country.country,
   }));
   console.log(countries);
   return (
