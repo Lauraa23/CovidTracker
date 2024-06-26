@@ -8,6 +8,8 @@ import { NewDeaths } from "./NewDeaths";
 import { TotalRecovered } from "./TotalRecovered";
 import { TotalActive } from "./TotalActive";
 import Map from "../map/Map";
+import { ExtraInformation } from "./ExtraInformation";
+
 const TrackerOne = () => {
   const [data, setData] = useState({
     totalCases: 31415926,
@@ -17,30 +19,14 @@ const TrackerOne = () => {
   return (
     <div
       id="rigthContent"
-      className="overflow-hidden block absolute w-3/5 bg-[#f7f8fc] left-[500px]
-    outline-none"
+      className="overflow-hidden block absolute w-3/10 bg-[#f7f8fc] left-[480px] p-[30px]
+    outline-none h-screen"
     >
       <div
         id="containerSelector"
-        className="items-center justify-between flex mb-[30px] pb-[15px] border-b border-solid border-[rgba(0,0,0,0.1)]"
+        className="items-center justify-between flex mb-8 pb-4 border-b border-solid border-[rgba(0,0,0,0.1)]"
       >
-        <div
-          className="countrySelectBox flex items-center text-left relative select-none whitespace-nowrap"
-          style={{
-            fontSize: "16px",
-            borderRadius: "0 !important",
-            height: "50px",
-            padding: "8px 25px",
-            color: "#000",
-            fontWeight: 500,
-            width: "300px",
-            boxShadow: "0 15px 30px 0 rgba(20, 50, 90, 0.05)",
-            border: 0,
-            borderRadius: "4px !important",
-            lineHeight: "40px",
-            outline: "none",
-          }}
-        >
+        <div className="countrySelectBox text-base h-12 py-2 px-6 text-black font-medium w-72 shadow-lg border-0 rounded-lg flex items-center bg-white">
           <select>
             <option value="AL">Albania</option>
             <option value="AL">Albania</option>
@@ -51,10 +37,10 @@ const TrackerOne = () => {
           Updated: June 5, 2022
         </div>
       </div>
-      <div id="row" className="flex flex-wrap mr-[-15px] ml-[-15px]">
+      <div id="row" className="flex flex-column">
         <div
           id="rightInfo"
-          className="flex flex-wrap mr-[-15px] ml-[-15px] px-[15px]"
+          className="flex flex-[50%] flex-wrap -mr-4 -ml-[20px] px-4 gap-[30px]"
         >
           <TotalCases>{data.totalCases}</TotalCases>
           <TotalDeaths>{data.totalDeaths}</TotalDeaths>
@@ -63,10 +49,11 @@ const TrackerOne = () => {
           <NewCases>{data.newCases}</NewCases>
           <NewDeaths>{data.NewDeaths}</NewDeaths>
         </div>
-        <div className="Mapa">
+        <div className="Mapa flex-[40%] ">
           <Map />
         </div>
       </div>
+      <ExtraInformation />
     </div>
   );
 };
