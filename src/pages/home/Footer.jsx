@@ -4,44 +4,54 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-[#1b2a4e] flex flex-wrap items-center justify-center content-center flex-col">
-        <div className="footerElementsContainer flex flex-wrap justify-around items-center text-white text-[0.6rem]">
-          <div className="covimapLogo flex flex-col items-start w-1/5">
-            <img
-              src="/assets/images/logo-white.png"
-              alt="coronavirusWhite"
-              className="w-24"
-            />
-            <p>
+        <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <img className="w-20" src="/assets/images/logo-white.png" />
+            <p className="text-sm text-[0.55rem] text-[#fff] mb-4 font-[0.5rem]">
               These droplets can land on objects and surfaces around the person
               such as tables, doorknobs and handrails.
             </p>
-            <ul className="flex flex-row justify-evenly content-start items-start list-none">
-              <li>i</li>
-              <li>i</li>
-              <li>i</li>
-              <li>i</li>
+            <ul className="flex mt-4 sm:justify-start md:mt-0 space-x-1 rtl:space-x-reverse list-none">
+              <li>
+                <i className="ti-facebook bg-[#293f73] text-[#fff] p-[3px] rounded-[10px]"></i>
+              </li>
+              <li>
+                <i className="ti-twitter-alt bg-[#293f73] text-[#fff] p-[3.5px] rounded-[10px]"></i>
+              </li>
+              <li>
+                <i className="ti-linkedin bg-[#293f73] text-[#fff] p-[3.5px] rounded-[10px]"></i>
+              </li>
+              <li>
+                <i className="ti-youtube bg-[#293f73] text-[#fff] p-[3.5px] rounded-[10px]"></i>
+              </li>
             </ul>
           </div>
-          <div className="quicLinks">
-            <h4>Quic Links</h4>
-            <p>Prevention</p>
-            <p>Qurantine</p>
-            <p>About</p>
-            <p>Help</p>
+          <div>
+            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[0.65rem] dark:text-white hover:underline">
+              Quick Links
+            </h4>
+            <p className="text-[0.55rem] text-[#fff]">Prevention</p>
+            <p className="text-[0.55rem] text-[#fff]">Qurantine</p>
+            <p className="text-[0.55rem] text-[#fff]">About</p>
+            <p className="text-[0.55rem] text-[#fff]">Help</p>
           </div>
-          <div className="about">
-            <h4>About</h4>
-            <p>Hand wash</p>
-            <p>Social Distance</p>
-            <p>Isolate</p>
-            <p>Difference</p>
+          <div>
+            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[0.65rem] dark:text-white">
+              About
+            </h4>
+            <p className="text-[0.55rem] text-[#fff]">Hand Wash</p>
+            <p className="text-[0.55rem] text-[#fff]">Social Distance</p>
+            <p className="text-[0.55rem] text-[#fff]">Isolate</p>
+            <p className="text-[0.55rem] text-[#fff]">Difference</p>
           </div>
-          <div className="help">
-            <h4>Help</h4>
-            <p>Hand wash</p>
-            <p>Social Distance</p>
-            <p>Isolate</p>
-            <p>Difference</p>
+          <div>
+            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[0.65rem] dark:text-white">
+              Help
+            </h4>
+            <p className="text-[0.55rem] text-[#fff]">Hand Wash</p>
+            <p className="text-[0.55rem] text-[#fff]">Social Distance</p>
+            <p className="text-[0.55rem] text-[#fff]">Isolate</p>
+            <p className="text-[0.55rem] text-[#fff]">Difference</p>
           </div>
         </div>
         <div className="lowerFooter w-full flex flex-row justify-around px-0 py-[5px] border-t-[#223461] border-t border-solid bg-[#1b2a4e]">

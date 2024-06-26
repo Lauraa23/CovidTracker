@@ -5,7 +5,7 @@ const Spreads = () => {
     <section id="diseaseSpreadsWrapper">
       <div className="diseaseSpreadsContainer flex flex-col text-center">
         <div className="spreadsTitleCenter">
-          <h2 className="text-[0.8rem] text-[#262f5a]">Spreads</h2>
+          <h2 className="text-[0.8rem] text-[#262f5a] font-bold">Spreads</h2>
           <h3 className="text-2xl text-[#262f5a] font-bold">
             Disease spreads from person to person
           </h3>
@@ -20,7 +20,7 @@ const Spreads = () => {
               />
             </div>
             <div className="spreadTextContent text-start flex flex-col items-start p-2.5">
-              <h4 className="text-center text-[0.8rem] text-[#262f5a]">
+              <h4 className="text-center text-[0.8rem] text-[#262f5a] font-bold">
                 Wear Facemask
               </h4>
               <p className="text-start text-[0.6rem] text-[#262f5a]">
@@ -39,7 +39,7 @@ const Spreads = () => {
               />
             </div>
             <div className="spreadTextContent text-start flex flex-col items-start p-2.5">
-              <h4 className="text-center text-[0.8rem] text-[#262f5a]">
+              <h4 className="text-center text-[0.8rem] text-[#262f5a] font-bold">
                 Wash your hands often
               </h4>
               <p className="text-start text-[0.6rem] text-[#262f5a]">
@@ -58,7 +58,7 @@ const Spreads = () => {
               />
             </div>
             <div className="spreadTextContent text-start flex flex-col items-start p-2.5">
-              <h4 className="text-center text-[0.8rem] text-[#262f5a]">
+              <h4 className="text-center text-[0.8rem] text-[#262f5a] font-bold">
                 Keep social distance
               </h4>
               <p className="text-start text-[0.6rem] text-[#262f5a]">

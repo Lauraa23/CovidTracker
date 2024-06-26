@@ -9,7 +9,7 @@ const Prevent = () => {
         style={{ background: "#f0f0f0" }}
       >
         <div className="preventTitle">
-          <h2 className="text-[0.8rem] text-[#262f5a]">Prevent</h2>
+          <h2 className="text-[0.8rem] text-[#262f5a] font-bold">Prevent</h2>
           <h3 className="text-[2rem] text-[#262f5a] font-bold">
             Best way to prevent is avoid virus.
           </h3>

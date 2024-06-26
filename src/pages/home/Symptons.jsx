@@ -8,9 +8,9 @@ const Symptoms = () => {
         className="text-center px-0 py-[50px]"
         style={{ background: "aliceblue" }}
       >
-        <div className="basicSymptom">
-          <h2 className="text-[0.8rem] text-[#262f5a]">Symptom</h2>
-          <h3 className="text-[2rem] text-[#262f5a]">
+        <div className="basicSymptom w-20p">
+          <h2 className="text-[0.8rem] text-[#262f5a] font-bold">Symptom</h2>
+          <h3 className="text-[2rem] text-[#262f5a] font-bold">
             Basic Symptom Against Coronavirus
           </h3>
         </div>
@@ -23,7 +23,9 @@ const Symptoms = () => {
                 alt="lungs"
               />
             </span>
-            <h4 className="text-[0.9rem] text-[#262f5a]">Aches and pains</h4>
+            <h4 className="text-[0.9rem] text-[#262f5a] font-bold">
+              Aches and pains
+            </h4>
             <p className="text-[0.7rem] text-start text-[#262f5a] m-0">
               Fever is a key symptom, experts say. Don't fixate on a number, but
               know it's really not a fever until your temperature reaches at
@@ -34,11 +36,13 @@ const Symptoms = () => {
             <span>
               <img
                 className="w-20"
-                src="/assets/images/cough.svg"
+                src="/assets/images/runny-nose.png"
                 alt="cough"
               />
             </span>
-            <h4 className="text-[0.9rem] text-[#262f5a]">Runny nose</h4>
+            <h4 className="text-[0.9rem] text-[#262f5a] font-bold">
+              Runny nose
+            </h4>
             <p className="text-[0.7rem] text-start text-[#262f5a] m-0">
               People of all ages who experience fever and/or cough associated
               with difficulty breathing/shortness of breath.
@@ -48,11 +52,13 @@ const Symptoms = () => {
             <span>
               <img
                 className="w-20"
-                src="/assets/images/breathing.svg"
+                src="/assets/images/sore-throat.png"
                 alt="breathing"
               />
             </span>
-            <h4 className="text-[0.9rem] text-[#262f5a]">Sore throat</h4>
+            <h4 className="text-[0.9rem] text-[#262f5a] font-bold">
+              Sore throat
+            </h4>
             <p className="text-[0.7rem] text-start text-[#262f5a] m-0">
               Older people, and those with underlying medical problems like high
               blood pressure, heart and lung problems, diabetes, or cancer
