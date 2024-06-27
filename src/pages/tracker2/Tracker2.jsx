@@ -40,7 +40,7 @@ const Tracker2 = () => {
 
   return (
     <div
-      className="flex-1 flex flex-col m-auto p-7 bg-light"
+      className="flex-1 flex flex-col m-auto p-7 bg-light h-[100vh]"
       id="table"
       tabIndex="3"
     >
@@ -79,7 +79,7 @@ const Tracker2 = () => {
                           className="w-[30px]"
                         />
                       ) : (
-                       ''
+                        ""
                       )}
                     </td>
                     <td>{country.country}</td>
