@@ -79,6 +79,8 @@ export default {
       },
       boxShadow: {
         md: "0px 1px 10px rgba(0, 0, 0, 0.06)",
+        lg: "0 15px 30px 0 rgba(20, 50, 90, 0.05)",
+        xl: "0 20px 30px 0 rgba(38, 57, 52, 0.1)",
       },
       lineHeight: {
         100: "5.5rem",

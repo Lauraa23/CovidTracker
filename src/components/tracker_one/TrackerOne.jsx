@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card, { CardTitle, CardData, CardImage } from "../card/Card";
 import { TotalCases } from "./TotalCases";
 import { TotalDeaths } from "./TotalDeaths";
@@ -9,11 +9,46 @@ import { TotalRecovered } from "./TotalRecovered";
 import { TotalActive } from "./TotalActive";
 import Map from "../map/Map";
 import { ExtraInformation } from "./ExtraInformation";
+import useApi from "../../services/useApi";
+import { API_BASE_URL } from "../../config/urls";
 
 const TrackerOne = () => {
-  const [data, setData] = useState({
-    totalCases: 31415926,
-    totalDeaths: 31415927,
+  const allData = useApi(`${API_BASE_URL}/all`);
+  const countriesData = useApi(`${API_BASE_URL}/countries`);
+  const [countryInfo, setCountryInfo] = useState(null);
+  const [countries, setCountries] = useState([]);
+  if (!allData) {
+    return <p>Cargando...</p>;
+  }
+  useEffect(() => {
+    setCountryInfo(allData);
+  }, []);
+  console.log(allData);
+  console.log(countryInfo);
+  useEffect(() => {
+    if (!countriesData) {
+      return <p>Cargando...</p>;
+    }
+    setCountries(countriesData);
+  }, [countriesData]);
+
+  const onCountryChange = async (e) => {
+    const countryCode = e.target.value;
+    const countryData = await useApi(
+      `${API_BASE_URL}/countries/${countryCode}`
+    );
+    if (!countryData) {
+      return <p>Cargando...</p>;
+    }
+    setCountryInfo(countryData);
+  };
+
+  const countryList = countries.map((country) => {
+    return (
+      <option key={country.countryInfo.iso2} value={country.countryInfo.iso2}>
+        {country.country}
+      </option>
+    );
   });
 
   return (
@@ -26,12 +61,18 @@ const TrackerOne = () => {
         id="containerSelector"
         className="items-center justify-between flex mb-8 pb-4 border-b border-solid border-[rgba(0,0,0,0.1)]"
       >
-        <div className="countrySelectBox text-base h-12 py-2 px-6 text-black font-medium w-72 shadow-lg border-0 rounded-lg flex items-center bg-white">
-          <select>
-            <option value="AL">Albania</option>
-            <option value="AL">Albania</option>
+        <div className="countrySelectBox text-[16px] h-[50px] py-[8px] px-[25px] text-black font-medium w-[300px] shadow-lg border-0 rounded bg-white">
+          <select
+            className="countries"
+            id="countries-select"
+            onChange={onCountryChange}
+          >
+            {countryList}
           </select>
-          <div className="countryPicker"></div>
+          {/* <div className="countryPicker">
+            <span className="current text-[16px] text-black font-medium"></span>
+            <ul className="">{countriesList}</ul>
+          </div> */}
         </div>
         <div id="updapteOn" className="text-black font-medium text-base">
           Updated: June 5, 2022
@@ -42,12 +83,12 @@ const TrackerOne = () => {
           id="rightInfo"
           className="flex flex-[50%] flex-wrap -mr-4 -ml-[20px] px-4 gap-[30px]"
         >
-          <TotalCases>{data.totalCases}</TotalCases>
-          <TotalDeaths>{data.totalDeaths}</TotalDeaths>
-          <TotalRecovered>{data.totalRecovered}</TotalRecovered>
-          <TotalActive>{data.totalActive}</TotalActive>
-          <NewCases>{data.newCases}</NewCases>
-          <NewDeaths>{data.NewDeaths}</NewDeaths>
+          <TotalCases>{countryInfo.cases}</TotalCases>
+          <TotalDeaths>{countryInfo.deaths}</TotalDeaths>
+          <TotalRecovered>{countryInfo.recovered}</TotalRecovered>
+          <TotalActive>{countryInfo.active}</TotalActive>
+          <NewCases>{countryInfo.todayCases}</NewCases>
+          <NewDeaths>{countryInfo.todayDeaths}</NewDeaths>
         </div>
         <div className="Mapa flex-[40%] ">
           <Map />

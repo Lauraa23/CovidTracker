@@ -6,7 +6,6 @@ import "./map.css";
 
 export default function Map() {
   const data = useApi(`${API_BASE_URL}/countries`);
-  console.log(data);
 
   if (!data) {
     return <p>Cargando ...</p>;
@@ -14,12 +13,12 @@ export default function Map() {
   const filterCountries = data.filter((country) => {
     return country.countryInfo.iso2;
   });
-  console.log(filterCountries);
+
   const countries = filterCountries.map((country) => ({
     country: country.countryInfo.iso2,
     countryName: country.country,
   }));
-  console.log(countries);
+
   return (
     <div className="map" id="map">
       <WorldMap
