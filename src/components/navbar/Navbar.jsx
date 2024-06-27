@@ -16,7 +16,7 @@ const Navbar = () => {
               <div className="animate-spinner">
                 <img
                   className="w-12 relative align-middle border-none m-auto"
-                  src="../public/assets/images/coronavirus.png"
+                  src="/assets/images/coronavirus.png"
                   alt="logo covid"
                 />
               </div>
