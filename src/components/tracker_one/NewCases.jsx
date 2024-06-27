@@ -5,7 +5,7 @@ export const NewCases = ({ children }) => {
     <Card>
       <CardImage src={"/assets/icons/covid-orange.svg"} />
       <CardTitle>New Cases</CardTitle>
-      <CardData className="text-brightOrange">86503057</CardData>
+      <CardData className="text-brightOrange">{children}</CardData>
     </Card>
   );
 };

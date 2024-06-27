@@ -5,7 +5,7 @@ export const TotalRecovered = ({ children }) => {
     <Card>
       <CardImage src={"/assets/icons/covid-green.svg"} />
       <CardTitle>Total Recovered</CardTitle>
-      <CardData className="text-brightGreen">86503057</CardData>
+      <CardData className="text-brightGreen">{children}</CardData>
     </Card>
   );
 };

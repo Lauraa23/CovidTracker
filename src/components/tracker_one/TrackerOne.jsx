@@ -17,19 +17,17 @@ const TrackerOne = () => {
   const countriesData = useApi(`${API_BASE_URL}/countries`);
   const [countryInfo, setCountryInfo] = useState(null);
   const [countries, setCountries] = useState([]);
-  if (!allData) {
-    return <p>Cargando...</p>;
-  }
+
   useEffect(() => {
-    setCountryInfo(allData);
-  }, []);
-  console.log(allData);
-  console.log(countryInfo);
-  useEffect(() => {
-    if (!countriesData) {
-      return <p>Cargando...</p>;
+    if (allData) {
+      setCountryInfo(allData);
     }
-    setCountries(countriesData);
+  }, [allData]);
+
+  useEffect(() => {
+    if (countriesData) {
+      setCountries(countriesData);
+    }
   }, [countriesData]);
 
   const onCountryChange = async (e) => {
@@ -37,15 +35,19 @@ const TrackerOne = () => {
     const countryData = await useApi(
       `${API_BASE_URL}/countries/${countryCode}`
     );
-    if (!countryData) {
-      return <p>Cargando...</p>;
+    if (countryData) {
+      console.log(countryData);
+      setCountryInfo(countryData);
     }
-    setCountryInfo(countryData);
   };
+
+  if (!allData || !countriesData) {
+    return <p>Cargando...</p>;
+  }
 
   const countryList = countries.map((country) => {
     return (
-      <option key={country.countryInfo.iso2} value={country.countryInfo.iso2}>
+      <option key={country.country} value={country.countryInfo.iso2}>
         {country.country}
       </option>
     );
@@ -69,10 +71,6 @@ const TrackerOne = () => {
           >
             {countryList}
           </select>
-          {/* <div className="countryPicker">
-            <span className="current text-[16px] text-black font-medium"></span>
-            <ul className="">{countriesList}</ul>
-          </div> */}
         </div>
         <div id="updapteOn" className="text-black font-medium text-base">
           Updated: June 5, 2022
@@ -83,12 +81,18 @@ const TrackerOne = () => {
           id="rightInfo"
           className="flex flex-[50%] flex-wrap -mr-4 -ml-[20px] px-4 gap-[30px]"
         >
-          <TotalCases>{countryInfo.cases}</TotalCases>
-          <TotalDeaths>{countryInfo.deaths}</TotalDeaths>
-          <TotalRecovered>{countryInfo.recovered}</TotalRecovered>
-          <TotalActive>{countryInfo.active}</TotalActive>
-          <NewCases>{countryInfo.todayCases}</NewCases>
-          <NewDeaths>{countryInfo.todayDeaths}</NewDeaths>
+          {countryInfo ? (
+            <>
+              <TotalCases>{countryInfo.cases}</TotalCases>
+              <TotalDeaths>{countryInfo.deaths}</TotalDeaths>
+              <TotalRecovered>{countryInfo.recovered}</TotalRecovered>
+              <TotalActive>{countryInfo.active}</TotalActive>
+              <NewCases>{countryInfo.todayCases}</NewCases>
+              <NewDeaths>{countryInfo.todayDeaths}</NewDeaths>
+            </>
+          ) : (
+            <p>Cargando datos del país...</p>
+          )}
         </div>
         <div className="Mapa flex-[40%] ">
           <Map />
