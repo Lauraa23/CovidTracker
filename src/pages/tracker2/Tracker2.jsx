@@ -40,7 +40,7 @@ const Tracker2 = () => {
 
   return (
     <div
-      className="flex-1 flex flex-col m-auto p-7 bg-light h-[100vh]"
+      className="flex-1 flex flex-col m-auto p-7 bg-light h-[100vh] font-poppins"
       id="table"
       tabIndex="3"
     >

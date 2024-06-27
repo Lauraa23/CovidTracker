@@ -58,6 +58,8 @@ export default {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        poppins: 'Poppins',
+        roboto: 'Roboto',
         mono: [
           "SFMono-Regular",
           "Menlo",
