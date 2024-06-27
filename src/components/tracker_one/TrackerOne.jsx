@@ -32,15 +32,21 @@ const TrackerOne = () => {
 
   const onCountryChange = async (e) => {
     const countryCode = e.target.value;
-    const countryData = await useApi(
-      `${API_BASE_URL}/countries/${countryCode}`
-    );
-    if (countryData) {
-      console.log(countryData);
+    try {
+      const countryData = await fetchCountryData(countryCode);
       setCountryInfo(countryData);
+    } catch (error) {
+      console.error("Error fetching country data:", error);
     }
   };
 
+  const fetchCountryData = async (countryCode) => {
+    const response = await fetch(`${API_BASE_URL}/countries/${countryCode}`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return await response.json();
+  };
   if (!allData || !countriesData) {
     return <p>Cargando...</p>;
   }
