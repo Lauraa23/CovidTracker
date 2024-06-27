@@ -29,6 +29,7 @@ export default {
         casesLight: "#ebebf7",
         casesHover: "#D0D0EC",
         tableHover: "#E1E1F3",
+        textBlue:"#515184",
         strongGray: "#0000001a",
         darkBlue: "#0c0c0d",
         steel: "#888888",
@@ -59,6 +60,8 @@ export default {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        poppins: 'Poppins',
+        roboto: 'Roboto',
         mono: [
           "SFMono-Regular",
           "Menlo",

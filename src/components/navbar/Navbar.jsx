@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-24 left-0 top-0 h-full bg-white">
+    <nav className="w-24 h-full bg-light flex-shrink-0">
       <div className="pl-0 pr-0 w-full border-r border-solid border-strongGray">
         <ul className="flex flex-col p-0 m-0 h-screen list-none">
           <li className="text-center box-border mx-1 my-5 p-0">
@@ -22,7 +22,6 @@ const Navbar = () => {
               </div>
             </NavLink>
           </li>
-
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/1"
@@ -33,7 +32,6 @@ const Navbar = () => {
               <i className="ti-pie-chart group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
-
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/2"
@@ -44,7 +42,6 @@ const Navbar = () => {
               <i className="ti-view-list group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
-
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/3"
@@ -54,7 +51,6 @@ const Navbar = () => {
               <i className="ti-view-grid group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
-
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/4"
@@ -64,54 +60,50 @@ const Navbar = () => {
               <i className="ti-layout-tab group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>
-
+          {/* links inhabilitados */}
           <li className="group mx-1 my-5 p-0 text-center">
-            <NavLink
-              to="/"
+            <div
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <i className="ti-layers-alt group-hover:text-white text-primary text-2xl relative top-1"></i>
-            </NavLink>
+            </div>
           </li>
-
           <li className="group mx-1 my-5 p-0 text-center">
-            <NavLink
+            <div
               to="/"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <i className="ti-stats-up group-hover:text-white text-primary text-2xl relative top-1"></i>
-            </NavLink>
+            </div>
           </li>
-
           <li className="group mx-1 my-5 p-0 text-center">
-            <NavLink
+            <div
               to="/"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <i className="ti-world group-hover:text-white text-primary text-2xl relative top-1"></i>
-            </NavLink>
+            </div>
           </li>
-
-          <li className="flex-auto mx-1 my-5 p-0 text-center">
-            <NavLink
+          <li className="group flex-auto mx-1 my-5 p-0 text-center">
+            <div
               to="/"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-comment hover:text-white text-primary text-2xl relative top-1"></i>
-            </NavLink>
+              <i className="ti-comment group-hover:text-white text-primary text-2xl relative top-1"></i>
+            </div>
           </li>
           <li className="group mx-1 my-5 p-0 text-center">
-            <NavLink
+            <div
               to="/"
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <i className="ti-flickr-alt group-hover:text-white text-primary text-2xl relative top-1"></i>
-            </NavLink>
+            </div>
           </li>
         </ul>
       </div>
