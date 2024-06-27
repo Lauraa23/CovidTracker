@@ -1,6 +1,6 @@
 const TopCountry = ({ country }) => {
   return (
-    <li className="mb-3 p-3 block rounded shadow-md border-1 border-whisper border-solid hover:scale-105 hover:scale-105">
+    <li className="mb-3 p-3 block rounded shadow-md border-1 border-whisper border-solid hover:scale-105">
       <img
         className="w-10 rounded align-middle inline-block"
         src={country.countryInfo.flag}
