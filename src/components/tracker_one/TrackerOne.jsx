@@ -32,21 +32,13 @@ const TrackerOne = () => {
 
   const onCountryChange = async (e) => {
     const countryCode = e.target.value;
-    try {
-      const countryData = await fetchCountryData(countryCode);
-      setCountryInfo(countryData);
-    } catch (error) {
-      console.error("Error fetching country data:", error);
-    }
+    const countryData = countries.filter(
+      (country) => country.countryInfo.iso2 == countryCode
+    );
+    console.log(countryData);
+    setCountryInfo(countryData[0]);
   };
 
-  const fetchCountryData = async (countryCode) => {
-    const response = await fetch(`${API_BASE_URL}/countries/${countryCode}`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return await response.json();
-  };
   if (!allData || !countriesData) {
     return <p>Cargando...</p>;
   }
@@ -69,9 +61,9 @@ const TrackerOne = () => {
         id="containerSelector"
         className="items-center justify-between flex mb-8 pb-4 border-b border-solid border-[rgba(0,0,0,0.1)]"
       >
-        <div className="countrySelectBox text-[16px] h-[50px] py-[8px] px-[25px] text-black font-medium w-[300px] shadow-lg border-0 rounded bg-white">
+        <div className="countrySelectBox text-[1.125rem] h-[50px] py-[8px] px-[25px] text-black font-medium w-[300px] shadow-lg border-0 rounded bg-white content-center">
           <select
-            className="countries"
+            className="countries w-full"
             id="countries-select"
             onChange={onCountryChange}
           >
@@ -104,7 +96,7 @@ const TrackerOne = () => {
           <Map />
         </div>
       </div>
-      <ExtraInformation />
+      <ExtraInformation data={allData} />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const data = {
   },
 };
 
-const SmallCard = ({ information }) => {
+const SmallCard = ({ information, infoData }) => {
   const { title, imageUrl } = data[information];
   return (
     <div className="bg-white w-[300px] p-[15px]">
@@ -34,7 +34,7 @@ const SmallCard = ({ information }) => {
         <div className="info">
           <h5 className="text-navyBlue text-[20]">{title}</h5>
           <h3 className="text-navyBlue text-[35px] font-semibold mb-0">
-            86503057
+            {infoData ? infoData : "0"}
           </h3>
         </div>
       </div>
