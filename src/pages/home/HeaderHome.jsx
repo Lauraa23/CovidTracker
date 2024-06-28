@@ -14,10 +14,10 @@ const Header = () => {
       >
         <nav
           id="navbarHome"
-          className="w-full flex justify-between items-center justify-evenly bg-transparent px-5 py-2.5"
+          className="w-full flex justify-between items-center justify-evenly bg-transparent px-8 py-5"
         >
           <img
-            className="logoNavbar h-4"
+            className="logoNavbar h-5"
             src="assets/images/logo-white.png"
             alt="coronavirus"
           />
@@ -32,7 +32,7 @@ const Header = () => {
               <li>
                 <NavLink
                   to="trackers/"
-                  className="bg-[#2d2f91] text-white no-underline text-center px-2.5 py-2 rounded-[20px] hover:bg-[#1565c0]"
+                  className="bg-[#2d2f91] text-white no-underline text-center px-5 py-2.5 rounded-[20px] hover:bg-[#1565c0]"
                 >
                   Trackers
                 </NavLink>
@@ -40,21 +40,21 @@ const Header = () => {
             </ul>
           </div>
         </nav>
-        <div className="bannerContainer flex flex-row items-center justify-around">
-          <div className="messageSection flex flex-col items-center h-[90vh] w-[35%] justify-start">
-            <h3 className="text-[1.8rem] text-start font-bold">
+        <div className="bannerContainer flex flex-row items-center justify-evenly">
+          <div className="messageSection flex flex-col items-center h-[90vh] w-[32%] justify-start">
+            <h3 className="text-[2.5rem] text-start font-bold">
               Stay Home, And Prayer For Victim Of Corona Virus
             </h3>
-            <p className="text-[0.6rem] text-start">
-              Los coronavirus humanos son comunes y típicamente están asociados
-              con enfermedades leves, similares al resfriado común. El
-              coronavirus COVID-19 está afectando a 210 países y territorios
-              alrededor del mundo y 2 embarcaciones internacionales.
+            <p className="text-[1rem] text-start font-light">
+              Human coronaviruses are common and are typically associated with
+              mild illnesses, similar to the common cold.The corona virus
+              COVID-19 is affecting 210 countries & territories around the world
+              and 2 international conveyances.
             </p>
           </div>
           <div className="imageSection">
             <img
-              className="bannerRightImage w-[30vw]"
+              className="bannerRightImage w-[28vw]"
               src="/assets/images/banner-right-image1.png"
               alt="bannerRight"
             />
