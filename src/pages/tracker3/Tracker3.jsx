@@ -24,15 +24,31 @@ const Tracker3 = () => {
   }
   return (
     <div>
+      <div className="font-poppins text-[#2b2a69] text-2xl font-bold text-left mb-[30px] pb-[10px] pl-[20px] mt-[30px]">
+        <h1>Top 10 Country wise Covid-19 Updates - Tiles</h1>
+      </div>
+
       <table className="font-poppins" id="CountriesDataTable">
         <thead>
           <tr>
-            <th>Top Cases</th>
-            <th>Today Cases</th>
-            <th>Top Deaths</th>
-            <th>Today Deaths</th>
-            <th>Top Active</th>
-            <th>Top Recover</th>
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[30px] pb-[10px] pl-[40px] mt-[30px] mb-[15px]">
+              <h4>Top Cases</h4>
+            </th>
+            <th>
+              <h4>Today Cases</h4>
+            </th>
+            <th>
+              <h4>Top Deaths</h4>
+            </th>
+            <th>
+              <h4>Today Deaths</h4>
+            </th>
+            <th>
+              <h4>Top Active</h4>
+            </th>
+            <th>
+              <h4>Top Recover</h4>
+            </th>
           </tr>
         </thead>
         <tbody className="text-textBlue">
