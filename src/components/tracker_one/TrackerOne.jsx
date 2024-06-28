@@ -11,6 +11,7 @@ import Map from "../map/Map";
 import { ExtraInformation } from "./ExtraInformation";
 import useApi from "../../services/useApi";
 import { API_BASE_URL } from "../../config/urls";
+import DateComponent from "./Date";
 
 const TrackerOne = () => {
   const allData = useApi(`${API_BASE_URL}/all`);
@@ -71,7 +72,7 @@ const TrackerOne = () => {
           </select>
         </div>
         <div id="updapteOn" className="text-black font-medium text-base">
-          Updated: June 5, 2022
+          <DateComponent />
         </div>
       </div>
       <div id="row" className="flex flex-column">
