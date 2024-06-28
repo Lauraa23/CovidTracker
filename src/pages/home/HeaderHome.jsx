@@ -31,7 +31,7 @@ const Header = () => {
               <li className="cursor-pointer text-white">Help</li>
               <li>
                 <NavLink
-                  to="trackers/"
+                  to="trackers/1"
                   className="bg-[#2d2f91] text-white no-underline text-center px-5 py-2.5 rounded-[20px] hover:bg-[#1565c0]"
                 >
                   Trackers
