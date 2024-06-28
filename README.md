@@ -8,13 +8,13 @@ Covid Tracker es una aplicación web diseñada para proporcionar información ac
 
 ## Tecnologías Utilizadas
 
-Front-end: HTML, CSS, JS, React + Vite, Tailwind
-API de datos: [COVID-19 API](https://disease.sh/)
-Página de referencia: https://covimap.dexignzone.com
-Mapas: React-svg-Worldmap
-Tablas: [www.dataTable.net](https://datatables.net/)
-Código Limpio
-Jest 
+-Front-end: HTML, CSS, JS, React + Vite, Tailwind
+-API de datos: [COVID-19 API](https://disease.sh/)
+-Página de referencia: https://covimap.dexignzone.com
+-Mapas: React-svg-Worldmap
+-Tablas: [www.dataTable.net](https://datatables.net/)
+-Código Limpio
+-Jest 
 
 ## Guía de instalación 
 
