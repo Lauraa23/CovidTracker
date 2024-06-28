@@ -60,6 +60,7 @@ export default {
         ],
         poppins: 'Poppins',
         roboto: 'Roboto',
+
         mono: [
           "SFMono-Regular",
           "Menlo",
