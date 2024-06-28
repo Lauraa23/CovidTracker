@@ -11,7 +11,7 @@ import Map from "../map/Map";
 import { ExtraInformation } from "./ExtraInformation";
 import useApi from "../../services/useApi";
 import { API_BASE_URL } from "../../config/urls";
-import DateComponent from "./Date";
+import DateComponent from "./DateComponent";
 
 const TrackerOne = () => {
   const allData = useApi(`${API_BASE_URL}/all`);
@@ -75,10 +75,10 @@ const TrackerOne = () => {
           <DateComponent />
         </div>
       </div>
-      <div id="row" className="flex flex-column">
+      <div id="row" className="flex flex-column w-[100%]">
         <div
           id="rightInfo"
-          className="flex flex-[50%] flex-wrap -mr-4 -ml-[20px] px-4 gap-[30px]"
+          className="flex w-[50%] flex-wrap -mr-4 -ml-[20px] px-4 gap-[30px]"
         >
           {countryInfo ? (
             <>
@@ -93,7 +93,7 @@ const TrackerOne = () => {
             <p>Cargando datos del país...</p>
           )}
         </div>
-        <div className="Mapa flex-[40%] ">
+        <div className="Mapa w-[50%]">
           <Map />
         </div>
       </div>
