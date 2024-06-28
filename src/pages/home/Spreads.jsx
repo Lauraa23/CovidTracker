@@ -2,11 +2,11 @@ import React from "react";
 
 const Spreads = () => {
   return (
-    <section id="diseaseSpreadsWrapper">
-      <div className="diseaseSpreadsContainer flex flex-col text-center">
+    <section id="diseaseSpreadsWrapper px-0 py-[50px]">
+      <div className="diseaseSpreadsContainer flex flex-col text-center px-0 py-[50px]">
         <div className="spreadsTitleCenter">
-          <h2 className="text-[0.8rem] text-[#262f5a] font-bold">Spreads</h2>
-          <h3 className="text-2xl text-[#262f5a] font-bold">
+          <h2 className="text-[1rem] text-[#262f5a] font-bold">Spreads</h2>
+          <h3 className="text-[2rem] text-[#262f5a] font-bold">
             Disease spreads from person to person
           </h3>
         </div>
@@ -20,10 +20,10 @@ const Spreads = () => {
               />
             </div>
             <div className="spreadTextContent text-start flex flex-col items-start p-2.5">
-              <h4 className="text-center text-[0.8rem] text-[#262f5a] font-bold">
+              <h4 className="text-center text-[1.2rem] text-[#262f5a] font-bold">
                 Wear Facemask
               </h4>
-              <p className="text-start text-[0.6rem] text-[#262f5a]">
+              <p className="text-start text-[0.8rem] font-light text-[#262f5a]">
                 Fever is a key symptom, experts say. Don't fixate on a number,
                 but know it's really not a fever until your temperature reaches
                 at least 100
@@ -39,10 +39,10 @@ const Spreads = () => {
               />
             </div>
             <div className="spreadTextContent text-start flex flex-col items-start p-2.5">
-              <h4 className="text-center text-[0.8rem] text-[#262f5a] font-bold">
+              <h4 className="text-center text-[1.2rem] text-[#262f5a] font-bold">
                 Wash your hands often
               </h4>
-              <p className="text-start text-[0.6rem] text-[#262f5a]">
+              <p className="text-start text-[0.8rem] font-light text-[#262f5a]">
                 Coughing is another key symptom, but it's not just any cough,
                 said Schaffner. It should be a dry cough that you feel in your
                 chest.
@@ -58,10 +58,10 @@ const Spreads = () => {
               />
             </div>
             <div className="spreadTextContent text-start flex flex-col items-start p-2.5">
-              <h4 className="text-center text-[0.8rem] text-[#262f5a] font-bold">
+              <h4 className="text-center text-[1.2rem] text-[#262f5a] font-bold">
                 Keep social distance
               </h4>
-              <p className="text-start text-[0.6rem] text-[#262f5a]">
+              <p className="text-start text-[0.8rem] font-light text-[#262f5a]">
                 Shortness of breath can be a third -- and very serious --
                 manifestation of Covid-19, and it can occur on its own, without
                 a cough.

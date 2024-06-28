@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#1b2a4e] flex flex-wrap items-center justify-center content-center flex-col">
-        <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+      <footer className="bg-[#1b2a4e]">
+        <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 items-center">
           <div>
             <img className="w-20" src="/assets/images/logo-white.png" />
-            <p className="text-sm text-[0.55rem] text-[#fff] mb-4 font-[0.5rem]">
+            <p className="text-sm text-[0.6rem] text-[#fff] mb-4 font-[0.5rem]">
               These droplets can land on objects and surfaces around the person
               such as tables, doorknobs and handrails.
             </p>
@@ -27,38 +27,38 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[0.65rem] dark:text-white hover:underline">
+            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white hover:underline">
               Quick Links
             </h4>
-            <p className="text-[0.55rem] text-[#fff]">Prevention</p>
-            <p className="text-[0.55rem] text-[#fff]">Qurantine</p>
-            <p className="text-[0.55rem] text-[#fff]">About</p>
-            <p className="text-[0.55rem] text-[#fff]">Help</p>
+            <p className="text-[0.75rem] text-[#fff]">Prevention</p>
+            <p className="text-[0.75rem] text-[#fff]">Qurantine</p>
+            <p className="text-[0.75rem] text-[#fff]">About</p>
+            <p className="text-[0.75rem] text-[#fff]">Help</p>
           </div>
           <div>
-            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[0.65rem] dark:text-white">
+            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
               About
             </h4>
-            <p className="text-[0.55rem] text-[#fff]">Hand Wash</p>
-            <p className="text-[0.55rem] text-[#fff]">Social Distance</p>
-            <p className="text-[0.55rem] text-[#fff]">Isolate</p>
-            <p className="text-[0.55rem] text-[#fff]">Difference</p>
+            <p className="text-[0.75rem] text-[#fff]">Hand Wash</p>
+            <p className="text-[0.75rem] text-[#fff]">Social Distance</p>
+            <p className="text-[0.75rem] text-[#fff]">Isolate</p>
+            <p className="text-[0.75rem] text-[#fff]">Difference</p>
           </div>
           <div>
-            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[0.65rem] dark:text-white">
+            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
               Help
             </h4>
-            <p className="text-[0.55rem] text-[#fff]">Hand Wash</p>
-            <p className="text-[0.55rem] text-[#fff]">Social Distance</p>
-            <p className="text-[0.55rem] text-[#fff]">Isolate</p>
-            <p className="text-[0.55rem] text-[#fff]">Difference</p>
+            <p className="text-[0.75rem] text-[#fff]">Hand Wash</p>
+            <p className="text-[0.75rem] text-[#fff]">Social Distance</p>
+            <p className="text-[0.75rem] text-[#fff]">Isolate</p>
+            <p className="text-[0.75rem] text-[#fff]">Difference</p>
           </div>
         </div>
         <div className="lowerFooter w-full flex flex-row justify-around px-0 py-[5px] border-t-[#223461] border-t border-solid bg-[#1b2a4e]">
-          <p className="text-[0.4rem] text-white">
+          <p className="text-[0.6rem] text-white">
             © Copyright 2020. All Rights Reserved
           </p>
-          <p className="text-[0.4rem] text-white">Design by COVIDongas</p>
+          <p className="text-[0.6rem] text-white">Design by COVIDongas</p>
         </div>
       </footer>
     </>
