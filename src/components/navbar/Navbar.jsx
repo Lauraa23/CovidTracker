@@ -38,7 +38,7 @@ const Navbar = () => {
               className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
+              <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-red"></span>
               <i className="ti-view-list group-hover:text-white text-primary text-2xl relative top-1"></i>
             </NavLink>
           </li>

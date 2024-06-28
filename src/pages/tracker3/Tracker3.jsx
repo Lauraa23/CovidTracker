@@ -3,6 +3,7 @@ import $ from "jquery";
 import "datatables.net";
 import { API_BASE_URL } from "../../config/urls";
 import useApi from "../../services/useApi";
+// import "./tracker3.css";
 
 const Tracker3 = () => {
   const data = useApi(`${API_BASE_URL}/countries`);
@@ -23,7 +24,7 @@ const Tracker3 = () => {
   }
   return (
     <div>
-      <table className="" id="CountriesDataTable">
+      <table className="font-poppins" id="CountriesDataTable">
         <thead>
           <tr>
             <th>Top Cases</th>
@@ -38,21 +39,26 @@ const Tracker3 = () => {
           {data.map((country) => (
             <tr key={country.country}>
               <td className="bg-[#fffefe]">
-                <div className="flex flex-row">
-                  <div>
+                <div className="flex flex-row m-10 justify-around p-3 border-2 border-sky-500 w-200">
+                  <div className="self-center">
                     {" "}
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
                         src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
-                        className="w-[30px]"
+                        className="w-[50px] h-[50px] object-cover rounded-full"
                       />
                     ) : (
                       ""
                     )}
                   </div>
-                  <div className="flex flex-col">
-                    <div>{country.country}</div>
-                    <div>{country.cases}</div>
+
+                  <div className="flex flex-col items-left pl-3">
+                    <div className="font-poppins font-medium text-xs text-[#2b2a69]">
+                      {country.country}
+                    </div>
+                    <div className="font-roboto font-bold text-lg text-[#2b2a69]">
+                      {country.cases}
+                    </div>
                   </div>
                 </div>
               </td>
@@ -72,7 +78,47 @@ const Tracker3 = () => {
                   </div>
                   <div className="flex flex-col">
                     <div>{country.country}</div>
-                    <div>{country.todayCases}</div>
+                    <div className="font-roboto">{country.todayCases}</div>
+                  </div>
+                </div>
+              </td>
+
+              <td className="bg-[#fffefe]">
+                <div className="flex flex-row">
+                  <div>
+                    {" "}
+                    {country.countryInfo && country.countryInfo.iso2 ? (
+                      <img
+                        src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
+                        className="w-[30px]"
+                      />
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="flex flex-col">
+                    <div>{country.country}</div>
+                    <div className="font-roboto">{country.cases}</div>
+                  </div>
+                </div>
+              </td>
+
+              <td className="bg-[#fffefe]">
+                <div className="flex flex-row">
+                  <div>
+                    {" "}
+                    {country.countryInfo && country.countryInfo.iso2 ? (
+                      <img
+                        src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
+                        className="w-[30px]"
+                      />
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="flex flex-col">
+                    <div>{country.country}</div>
+                    <div className="font-roboto">{country.cases}</div>
                   </div>
                 </div>
               </td>
