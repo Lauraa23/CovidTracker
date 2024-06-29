@@ -9,7 +9,7 @@ const Layout = () => {
         <Navbar />
         <TrackerZero />
       </div>
-      <main className="w-[70vw] h-[100vh] justify-end bg-light">
+      <main className="w-[100vw] h-[100vh] justify-end bg-light">
         <Outlet />
       </main>
     </div>

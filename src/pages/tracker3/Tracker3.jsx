@@ -3,7 +3,7 @@ import $ from "jquery";
 import "datatables.net";
 import { API_BASE_URL } from "../../config/urls";
 import useApi from "../../services/useApi";
-// import "./tracker3.css";
+import TopCases from "./TopCases";
 
 const Tracker3 = () => {
   const data = useApi(`${API_BASE_URL}/countries`);
@@ -24,38 +24,39 @@ const Tracker3 = () => {
   }
   return (
     <div>
-      <div className="font-poppins text-[#2b2a69] text-2xl font-bold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px] ">
+      <div className="font-poppins text-[#2b2a69] text-2xl font-bold text-left mb-[10px] pb-[20px] pl-[15px] mt-[20px]">
         <h1>Top 10 Country wise Covid-19 Updates - Tiles</h1>
       </div>
-
-      <table className="font-poppins w-[100%] bg-light" id="CountriesDataTable">
+      <hr className="text-gray" />
+      <br />
+      <table className="font-poppins w-[100%]" id="CountriesDataTable">
         <thead>
           <tr>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[20px] pl-[46px] mt-[15px] mb-[15px]">
               <h4>Top Cases</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[20px] pl-[46px] mt-[15px] mb-[15px]">
               <h4>Today Cases</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[20px] pl-[46px] mt-[15px] mb-[15px]">
               <h4>Top Deaths</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[20px] pl-[46px] mt-[15px] mb-[15px]">
               <h4>Today Deaths</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[10px] pb-[20px] pl-[46px] mt-[15px]">
               <h4>Top Active</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[10px] pb-[20px] pl-[46px] mt-[15px]">
               <h4>Top Recover</h4>
             </th>
           </tr>
         </thead>
-        <tbody className="text-textBlue ">
-          {data.map((country) => (
+        <tbody className="text-textBlue">
+          {data.slice(0, 10).map((country) => (
             <tr key={country.country} className="">
-              <td className="pl-2 pb-3">
-                <div className="w-32 h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white ">
+              <td className="pl-12 pb-3">
+                <div className="w-32 h-12 transform transition-transform hover:scale-125 flex flex-row justify-around p-1 shadow-lg rounded bg-white ">
                   <div className="self-center">
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
@@ -76,8 +77,9 @@ const Tracker3 = () => {
                   </div>
                 </div>
               </td>
-              <td className="pl-2 pb-3">
-                <div className="w-32 h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white ">
+
+              <td className="pl-12 pb-3">
+                <div className="w-32 h-12 transform transition-transform hover:scale-125 flex flex-row justify-around p-1 shadow-lg rounded bg-white ">
                   <div className="self-center">
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
@@ -97,9 +99,9 @@ const Tracker3 = () => {
                     </div>
                   </div>
                 </div>
-              </td>{" "}
-              <td className="pl-2 pb-3">
-                <div className="w-32 h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white ">
+              </td>
+              <td className="pl-12 pb-3">
+                <div className="w-32 h-12 transform transition-transform hover:scale-125 flex flex-row justify-around p-1 shadow-lg rounded bg-white ">
                   <div className="self-center">
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
@@ -119,9 +121,9 @@ const Tracker3 = () => {
                     </div>
                   </div>
                 </div>
-              </td>{" "}
-              <td className="pl-2 pb-3">
-                <div className="w-32 h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white ">
+              </td>
+              <td className="pl-12 pb-3">
+                <div className="w-32 h-12 transform transition-transform hover:scale-125 flex flex-row justify-around p-1 shadow-lg rounded bg-white ">
                   <div className="self-center">
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
@@ -141,9 +143,9 @@ const Tracker3 = () => {
                     </div>
                   </div>
                 </div>
-              </td>{" "}
-              <td className="pl-2 pb-3">
-                <div className="w-32 h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white ">
+              </td>
+              <td className="pl-12 pb-3">
+                <div className="w-32 h-12 transform transition-transform hover:scale-125 flex flex-row justify-around p-1 shadow-lg rounded bg-white ">
                   <div className="self-center">
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
@@ -163,9 +165,9 @@ const Tracker3 = () => {
                     </div>
                   </div>
                 </div>
-              </td>{" "}
-              <td className="pl-2 pb-3">
-                <div className="w-32 h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white ">
+              </td>
+              <td className="pl-12 pb-3">
+                <div className="w-32 h-12 transform transition-transform hover:scale-125 flex flex-row justify-around p-1 shadow-lg rounded bg-white ">
                   <div className="self-center">
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
