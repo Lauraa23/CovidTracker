@@ -77,7 +77,7 @@ const TrackerOne = () => {
       >
         <div
           id="rightInfo"
-          className="flex w-[100%] xl:w-[50%] flex-wrap -mr-4 -ml-[20px] px-4 justify-between"
+          className="w-[100%] xl:w-[50%] justify-between grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 space-between gap-[20px]"
         >
           {countryInfo ? (
             <>
