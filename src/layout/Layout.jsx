@@ -5,11 +5,11 @@ import TrackerZero from "../components/tracker_zero/TrackerZero.jsx";
 const Layout = () => {
   return (
     <div className="flex box-border m-0 p-0">
-      <div className="flex w-[35vw]">
+      <div className="flex w-auto lg:w-[500px]">
         <Navbar />
         <TrackerZero />
       </div>
-      <main className="w-[65vw] h-[100vh] justify-end">
+      <main className="w-screen h-[100vh] justify-end bg-light overflow-hidden">
         <Outlet />
       </main>
     </div>
