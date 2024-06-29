@@ -25,7 +25,7 @@ const InformationCard = ({ title, cases, todayCases, variant }) => {
   let banner;
   if (variant !== "active-case") {
     banner = (
-      <b className="float-right text-xs text-steel bg-white p-1 mr-2 rounded tracking-wide">
+      <b className="xl:float-right xl:relative xl:top-0 xl:right-0 text-xs text-steel bg-white p-1 mr-2 rounded tracking-wide lg:float-none lg:absolute lg:right-[10px] lg:top-[20px]">
         +{todayCases}
       </b>
     );
@@ -35,13 +35,15 @@ const InformationCard = ({ title, cases, todayCases, variant }) => {
 
   return (
     <li
-      className={`${bgColor} p-5 pb-4 mb-4 rounded border-2 border-solid border-transparent ${hoverColor} hover:scale-105 cursor-pointer`}
+      className={`${bgColor} p-5 pb-4 mb-4 rounded border-2 border-solid border-transparent ${hoverColor} hover:scale-105 cursor-pointer lg:relative`}
     >
-      <h6 className={`text-base font-semibold text-navyBlue inline-block`}>
+      <h6
+        className={`text-base font-semibold text-navyBlue xl:inline-block lg:block lg:m-b-[10px]`}
+      >
         {title}
       </h6>
       <p
-        className={`text-2xl ${textColor} font-semibold leading-6 float-right`}
+        className={`text-2xl ${textColor} font-semibold leading-6 xl:float-right lg:float-none `}
       >
         {cases}
       </p>
