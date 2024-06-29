@@ -31,16 +31,16 @@ const Tracker3 = () => {
       <table className="font-poppins" id="CountriesDataTable">
         <thead>
           <tr>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[30px] pb-[10px] pl-[50px] mt-[30px] mb-[20px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[50px] mt-[15px] mb-[15px]">
               <h4>Top Cases</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[30px] pb-[10px] pl-[50px] mt-[30px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[50px] mt-[15px] mb-[15px]">
               <h4>Today Cases</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[30px] pb-[10px] pl-[50px] mt-[30px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[50px] mt-[15px] mb-[15px]">
               <h4>Top Deaths</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[30px] pb-[10px] pl-[50px] mt-[30px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[50px] mt-[15px] mb-[15px]">
               <h4>Today Deaths</h4>
             </th>
             <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[30px] pb-[10px] pl-[50px] mt-[30px] mb-[15px]">
