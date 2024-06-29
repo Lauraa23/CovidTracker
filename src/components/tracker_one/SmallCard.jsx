@@ -26,9 +26,9 @@ const data = {
 const SmallCard = ({ information, infoData }) => {
   const { title, imageUrl } = data[information];
   return (
-    <div className="bg-white w-[300px] p-[15px]">
+    <div className="flex bg-white 2xl:w-[20%] xl:w-[32%] md:w-[49%] w-full p-[15px] flex-grow">
       <div className="flex gap-[10px]">
-        <div className="icon self-center">
+        <div className="icon self-center w-[50px]">
           <img src={imageUrl} alt="iconCovid" className="w-[50px]" />
         </div>
         <div className="info">

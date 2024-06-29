@@ -9,7 +9,7 @@ const Layout = () => {
         <Navbar />
         <TrackerZero />
       </div>
-      <main className="w-screen h-[100vh] justify-end bg-light overflow-hidden">
+      <main className="w-screen h-[100vh] bg-light overflow-hidden">
         <Outlet />
       </main>
     </div>
