@@ -46,8 +46,8 @@ const Tracker4 = () => {
 
   return (
     <>
-      <div className="flex flex-col font-poppins">
-        <h1 className="text-xl border-b border-gray-300 pb-2 mb-8 font-bold text-[#262f5a]">
+      <div className="flex flex-col font-poppins p-[20px]">
+        <h1 className="text-xl border-b border-strongGray pb-2 mb-8 font-bold text-[#262f5a]">
           Covid-19 Country Wise - Tabs
         </h1>
         <div className="flex flex-wrap">
@@ -67,19 +67,22 @@ const Tracker4 = () => {
             </button>
           ))}
         </div>
-          <div id="infoCard" className="flex flex-wrap px-4 gap-[30px]">
-            {countryInfoTag ? (
-              <>
-                <TotalCases>{countryInfoTag.cases}</TotalCases>
-                <TotalDeaths>{countryInfoTag.deaths}</TotalDeaths>
-                <TotalRecovered>{countryInfoTag.recovered}</TotalRecovered>
-                <TotalActive>{countryInfoTag.active}</TotalActive>
-                <NewCases>{countryInfoTag.todayCases}</NewCases>
-                <NewDeaths>{countryInfoTag.todayDeaths}</NewDeaths>
-              </>
-            ) : (
-              <p>Cargando datos del país...</p>
-            )}
+        <div
+          id="infoCard"
+          className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-[30px]"
+        >
+          {countryInfoTag ? (
+            <>
+              <TotalCases>{countryInfoTag.cases}</TotalCases>
+              <TotalDeaths>{countryInfoTag.deaths}</TotalDeaths>
+              <TotalRecovered>{countryInfoTag.recovered}</TotalRecovered>
+              <TotalActive>{countryInfoTag.active}</TotalActive>
+              <NewCases>{countryInfoTag.todayCases}</NewCases>
+              <NewDeaths>{countryInfoTag.todayDeaths}</NewDeaths>
+            </>
+          ) : (
+            <p>Cargando datos del país...</p>
+          )}
         </div>
       </div>
     </>
