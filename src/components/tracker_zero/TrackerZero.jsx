@@ -5,7 +5,7 @@ import TopCountries from "./TopCountries";
 const TrackerZero = () => {
   return (
     <div
-      className="w-full px-3 py-5 border-r border-solid border-strongGray z-1 h-screen 
+      className="w-90 px-3 py-5 border-r border-solid border-strongGray z-1 h-screen 
       scrollBar overflow-hidden focus:overflow-y-scroll hover:overflow-y-scroll active:overflow-y-scroll scroll-smooth cursor-grab max-[1200px]:hidden"
     >
       <GeneralInformation />
