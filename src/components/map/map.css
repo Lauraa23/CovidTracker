@@ -1,4 +1,4 @@
-#map svg {
+#map-container svg {
   margin: 0 auto;
 }
 .map-container {
@@ -22,13 +22,12 @@
 }
 
 .worldmap__figure-container {
-  padding-left: 170px;
-  padding-top: 50px;
+  padding: 20px;
   height: 100%;
 }
 .worldmap__figure-caption {
-  padding-left: 170px;
   border-bottom: solid 1px;
   letter-spacing: 3px;
   font-size: 15px;
+  text-align: center;
 }

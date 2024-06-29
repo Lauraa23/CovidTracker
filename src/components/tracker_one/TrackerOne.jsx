@@ -53,11 +53,7 @@ const TrackerOne = () => {
   });
 
   return (
-    <div
-      id="rigthContent"
-      className="overflow-hidden block absolute w-3/10 bg-[#f7f8fc] left-[480px] p-[30px]
-    outline-none h-screen"
-    >
+    <div id="rigthContent" className="overflow-scroll p-[30px] h-screen">
       <div
         id="containerSelector"
         className="items-center justify-between flex mb-8 pb-4 border-b border-solid border-[rgba(0,0,0,0.1)]"
@@ -75,10 +71,13 @@ const TrackerOne = () => {
           <DateComponent />
         </div>
       </div>
-      <div id="row" className="flex flex-column w-[100%]">
+      <div
+        id="row"
+        className="flex flex-col w-[100%] justify-between lg:flex-row gap-[20px]"
+      >
         <div
           id="rightInfo"
-          className="flex w-[50%] flex-wrap -mr-4 -ml-[20px] px-4 gap-[30px]"
+          className="w-[100%] xl:w-[50%] justify-between grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 space-between gap-[20px]"
         >
           {countryInfo ? (
             <>
@@ -93,7 +92,7 @@ const TrackerOne = () => {
             <p>Cargando datos del país...</p>
           )}
         </div>
-        <div className="Mapa w-[50%]">
+        <div className="Map w-[100%] lg:w-[50%]">
           <Map />
         </div>
       </div>

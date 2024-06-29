@@ -44,18 +44,22 @@ const Tracker2 = () => {
       id="table"
       tabIndex="3"
     >
-      <div className="bg-white rounded shadow-[0_15px_30px_0_rgba(20,50,90,0.05)] mb-[30px]; px-5 py-[15px] border-b-[rgba(0,0,0,0.12)] border-b border-solid;">
-        <h1 className="font-semibold text-[22px] mb-0 text-[#121158]">
+      <div className="bg-white rounded shadow-[0_15px_30px_0_rgba(20,50,90,0.05)] mb-[30px] py-[15px] border-b-[rgba(0,0,0,0.12)] border-b border-solid">
+        <h1 className="font-semibold text-[22px] mb-0 text-[#121158] border-b border-[#ccc] py-[10px] px-[20px]">
           Ajax Data Table - Covid-19 Country Wise State
         </h1>
-        <div className="line-below-h1"></div>
         <div className="px-5 py-[15px]">
           <div
             id="CountryStatsDataTable_wrapper"
-            className="relative clear-both overflow-scroll "
+            className="relative clear-both overflow-scroll"
           >
-            <table id="CountryStatsDataTable" className="w-full h-[70%]">
-              <thead>
+            <div></div>
+            <table
+              id="CountryStatsDataTable"
+              className="h-[70%]"
+              style={{ width: "100%" }}
+            >
+              <thead className="text-navyBlue">
                 <tr>
                   <th>Flag</th>
                   <th>Country</th>
