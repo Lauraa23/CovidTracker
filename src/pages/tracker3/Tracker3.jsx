@@ -55,13 +55,13 @@ const Tracker3 = () => {
           {data.map((country) => (
             <tr key={country.country}>
               <td className="bg-[#fffefe]">
-                <div className="flex flex-row m-10 justify-around p-3 border-2 border-sky-500 w-200">
+                <div className="ml-[2.75rem] mr-[0.75rem] hover:scale-150 flex flex-row justify-around p-3 w-200 shadow-lg rounded">
                   <div className="self-center p-[10px]">
                     {" "}
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
                         src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
-                        className="w-[50px] h-[50px] object-cover rounded-full"
+                        className="w-[1.9vw] h-[1.9vw] rounded-full mr-2 mb-[5px]"
                       />
                     ) : (
                       ""
@@ -80,13 +80,13 @@ const Tracker3 = () => {
               </td>
 
               <td className="bg-[#fffefe]">
-                <div className="flex flex-row m-10 justify-around p-3 border-2 border-sky-500 w-200">
-                  <div className="self-center">
+                <div className="hover:scale-150 flex flex-row m-10 justify-around p-3 w-200 shadow-lg rounded">
+                  <div className="self-center p-[10px]">
                     {" "}
                     {country.countryInfo && country.countryInfo.iso2 ? (
                       <img
                         src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
-                        className="w-[50px] h-[50px] object-cover rounded-full"
+                        className="w-[1.9vw] h-[1.9vw] rounded-full mr-2"
                       />
                     ) : (
                       ""
