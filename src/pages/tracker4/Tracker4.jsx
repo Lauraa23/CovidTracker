@@ -2,11 +2,18 @@ import "./Tracker4.css";
 import { API_BASE_URL } from "../../config/urls";
 import useApi from "../../services/useApi";
 import { useEffect, useState } from "react";
+import { TotalCases } from "../../components/tracker_one/TotalCases";
+import { TotalDeaths } from "../../components/tracker_one/TotalDeaths";
+import { NewCases } from "../../components/tracker_one/NewCases";
+import { NewDeaths } from "../../components/tracker_one/NewDeaths";
+import { TotalRecovered } from "../../components/tracker_one/TotalRecovered";
+import { TotalActive } from "../../components/tracker_one/TotalActive";
 
 const Tracker4 = () => {
   const [countries, setCountries] = useState([]);
-
   const data = useApi(`${API_BASE_URL}/countries`);
+  const [countryInfoTag, setCountryInfoTag] = useState(null);
+  const allCountryData = useApi(`${API_BASE_URL}/all`);
 
   useEffect(() => {
     if (data) {
@@ -17,8 +24,24 @@ const Tracker4 = () => {
     }
   }, [data]);
 
-  if (!data) {
-    <p>Cargando...</p>;
+  useEffect(() => {
+    if (allCountryData) {
+      setCountryInfoTag(allCountryData);
+    }
+  }, [allCountryData]);
+
+  const showCountryData = async (e) => {
+    const countryCode = e.target.value;
+    const countryData = countries.find(
+      (country) => country.countryInfo.iso2 === countryCode
+    );
+    if (countryData) {
+      setCountryInfoTag(countryData);
+    }
+  };
+
+  if (!allCountryData) {
+    return <p>Cargando...</p>;
   }
 
   return (
@@ -31,6 +54,8 @@ const Tracker4 = () => {
           {countries.map((country) => (
             <button
               key={country.country}
+              onClick={showCountryData}
+              value={country.countryInfo.iso2}
               className="text-xs py-2.5 px-3 bg-white rounded shadow-lg mr-3.5 mb-3.5 flex items-center font-semibold hover:bg-[#3639AE] hover:text-white transition duration-200"
             >
               <img
@@ -41,6 +66,20 @@ const Tracker4 = () => {
               {country.country}
             </button>
           ))}
+        </div>
+          <div id="infoCard" className="flex flex-wrap px-4 gap-[30px]">
+            {countryInfoTag ? (
+              <>
+                <TotalCases>{countryInfoTag.cases}</TotalCases>
+                <TotalDeaths>{countryInfoTag.deaths}</TotalDeaths>
+                <TotalRecovered>{countryInfoTag.recovered}</TotalRecovered>
+                <TotalActive>{countryInfoTag.active}</TotalActive>
+                <NewCases>{countryInfoTag.todayCases}</NewCases>
+                <NewDeaths>{countryInfoTag.todayDeaths}</NewDeaths>
+              </>
+            ) : (
+              <p>Cargando datos del país...</p>
+            )}
         </div>
       </div>
     </>
