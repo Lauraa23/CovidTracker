@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white hover:underline">
+            <h4 className="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white hover:underline">
               Quick Links
             </h4>
             <p className="text-[0.75rem] text-[#fff]">Prevention</p>
@@ -36,7 +36,7 @@ const Footer = () => {
             <p className="text-[0.75rem] text-[#fff]">Help</p>
           </div>
           <div>
-            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
+            <h4 className="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
               About
             </h4>
             <p className="text-[0.75rem] text-[#fff]">Hand Wash</p>
@@ -45,7 +45,7 @@ const Footer = () => {
             <p className="text-[0.75rem] text-[#fff]">Difference</p>
           </div>
           <div>
-            <h4 class="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
+            <h4 className="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
               Help
             </h4>
             <p className="text-[0.75rem] text-[#fff]">Hand Wash</p>
