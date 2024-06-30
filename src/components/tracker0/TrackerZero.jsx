@@ -1,6 +1,6 @@
 import "./trackerZero.css";
 import GeneralInformation from "./GeneralInformation.jsx";
-import TopCountries from "./TopCountries";
+import TopCountries from "./TopCountries.jsx";
 
 const TrackerZero = () => {
   return (

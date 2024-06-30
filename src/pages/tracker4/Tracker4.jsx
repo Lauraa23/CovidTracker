@@ -2,12 +2,12 @@ import "./Tracker4.css";
 import { API_BASE_URL } from "../../config/urls";
 import useApi from "../../services/useApi";
 import { useEffect, useState } from "react";
-import { TotalCases } from "../../components/tracker_one/TotalCases";
-import { TotalDeaths } from "../../components/tracker_one/TotalDeaths";
-import { NewCases } from "../../components/tracker_one/NewCases";
-import { NewDeaths } from "../../components/tracker_one/NewDeaths";
-import { TotalRecovered } from "../../components/tracker_one/TotalRecovered";
-import { TotalActive } from "../../components/tracker_one/TotalActive";
+import { TotalCases } from "../../components/tracker1/TotalCases";
+import { TotalDeaths } from "../../components/tracker1/TotalDeaths";
+import { NewCases } from "../../components/tracker1/NewCases";
+import { NewDeaths } from "../../components/tracker1/NewDeaths";
+import { TotalRecovered } from "../../components/tracker1/TotalRecovered";
+import { TotalActive } from "../../components/tracker1/TotalActive";
 
 const Tracker4 = () => {
   const [countries, setCountries] = useState([]);

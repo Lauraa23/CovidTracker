@@ -1,5 +1,5 @@
-import useApi from "../../services/useApi";
-import { API_BASE_URL } from "../../config/urls";
+import useApi from "../../services/useApi.jsx";
+import { API_BASE_URL } from "../../config/urls.js";
 import TopCountry from "./TopCountry.jsx";
 
 const TopCountries = () => {

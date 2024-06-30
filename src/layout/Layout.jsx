@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
 import { Outlet } from "react-router-dom";
-import TrackerZero from "../components/tracker_zero/TrackerZero.jsx";
+import TrackerZero from "../components/tracker0/TrackerZero.jsx";
 
 const Layout = () => {
   return (

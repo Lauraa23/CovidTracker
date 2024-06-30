@@ -1,4 +1,4 @@
-import useApi from "../../services/useApi";
+import useApi from "../../services/useApi.jsx";
 import { API_BASE_URL } from "../../config/urls.js";
 import InformationCard from "./InformationCard.jsx";
 
