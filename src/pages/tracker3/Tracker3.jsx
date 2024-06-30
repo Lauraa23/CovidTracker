@@ -26,7 +26,7 @@ const Tracker3 = () => {
       {countries.map((country, index) => (
         <div
           key={`${type}-${index}`}
-          className="h-13 transform transition-transform hover:scale-110 flex flex-row justify-start gap-[15px] px-[10px] py-[5px] shadow-lg rounded bg-white mb-2"
+          className="h-13 transform transition-transform hover:scale-110 flex flex-row justify-start gap-[15px] px-[10px] py-[5px] shadow-lg rounded bg-white mb-2 hover:cursor-pointer"
         >
           <div className="self-center w-[30px]">
             {country.countryInfo && country.countryInfo.iso2 ? (

@@ -4,7 +4,7 @@ import TrackerZero from "../components/tracker0/TrackerZero.jsx";
 
 const Layout = () => {
   return (
-    <div className="flex box-border m-0 p-0">
+    <div className="flex box-border m-0 p-0 cursor-grab">
       <div className="flex w-auto lg:w-[500px]">
         <Navbar />
         <TrackerZero />

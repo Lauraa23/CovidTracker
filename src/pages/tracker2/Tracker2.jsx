@@ -59,7 +59,7 @@ const Tracker2 = () => {
               className="h-[70%]"
               style={{ width: "100%" }}
             >
-              <thead className="text-navyBlue">
+              <thead className="text-navyBlue hover:cursor-pointer">
                 <tr>
                   <th>Flag</th>
                   <th>Country</th>
@@ -73,7 +73,7 @@ const Tracker2 = () => {
                   <th>Tested</th>
                 </tr>
               </thead>
-              <tbody className="text-textBlue">
+              <tbody className="text-textBlue hover:cursor-pointer">
                 {data.map((country) => (
                   <tr key={country.country}>
                     <td>
