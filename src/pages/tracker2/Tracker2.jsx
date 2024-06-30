@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import $ from "jquery";
 import "datatables.net";
 import "./tracker2.css";
@@ -7,15 +7,18 @@ import useApi from "../../services/useApi";
 
 const Tracker2 = () => {
   const data = useApi(`${API_BASE_URL}/countries`);
+  const dataTableRef = useRef(null);
 
   useEffect(() => {
     if (data && data.length > 0) {
       const tableId = "#CountryStatsDataTable";
 
+      // Destruir DataTable si ya existe
       if ($.fn.DataTable.isDataTable(tableId)) {
         $(tableId).DataTable().destroy();
       }
 
+      // Crear DataTable
       $(tableId).DataTable({
         paging: true,
         pageLength: 10,
@@ -31,7 +34,17 @@ const Tracker2 = () => {
           return `Showing ${start} to ${end} of ${total} entries`;
         },
       });
+
+      // Guardar referencia al elemento DataTable
+      dataTableRef.current = $(tableId);
     }
+
+    return () => {
+      // Limpiar DataTable al desmontar
+      if (dataTableRef.current) {
+        dataTableRef.current.DataTable().destroy(true);
+      }
+    };
   }, [data]);
 
   if (!data) {
@@ -58,6 +71,7 @@ const Tracker2 = () => {
               id="CountryStatsDataTable"
               className="h-[70%]"
               style={{ width: "100%" }}
+              data-testid="CountryStatsDataTable" // Agregar data-testid para la prueba
             >
               <thead className="text-navyBlue">
                 <tr>
@@ -81,6 +95,7 @@ const Tracker2 = () => {
                         <img
                           src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
                           className="w-[30px]"
+                          alt={`${country.country} flag`}
                         />
                       ) : (
                         ""
