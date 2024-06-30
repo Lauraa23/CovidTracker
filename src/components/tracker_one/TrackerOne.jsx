@@ -56,7 +56,7 @@ const TrackerOne = () => {
     <div id="rigthContent" className="overflow-scroll p-[30px] h-screen">
       <div
         id="containerSelector"
-        className="items-center justify-between flex mb-8 pb-4 border-b border-solid border-[rgba(0,0,0,0.1)]"
+        className="items-center justify-between flex mb-8 pb-4 border-b border-solid border-[rgba(0,0,0,0.1)] cursor-pointer"
       >
         <div className="countrySelectBox text-[1.125rem] h-[50px] py-[8px] px-[25px] text-black font-medium w-[300px] shadow-lg border-0 rounded bg-white content-center">
           <select
