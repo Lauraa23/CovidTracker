@@ -26,19 +26,19 @@ const Tracker3 = () => {
       {countries.map((country, index) => (
         <div
           key={`${type}-${index}`}
-          className="w-[190px] h-12 transform transition-transform hover:scale-110 flex flex-row justify-around p-1 w-200 shadow-lg rounded bg-white mb-2"
+          className="h-13 transform transition-transform hover:scale-110 flex flex-row justify-start gap-[15px] px-[10px] py-[5px] shadow-lg rounded bg-white mb-2"
         >
-          <div className="self-center">
+          <div className="self-center w-[30px]">
             {country.countryInfo && country.countryInfo.iso2 ? (
               <img
                 src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
-                className="w-[40px] h-[40px] rounded-full"
+                className="w-[30px] h-[30px] rounded-full"
               />
             ) : (
               ""
             )}
           </div>
-          <div className="flex flex-col items-left text-left">
+          <div className="flex flex-col items-left text-left ml-10px">
             <div className="font-poppins font-medium text-[12px] text-[#2b2a69] overflow-ellipsis">
               {country.country}
             </div>
@@ -52,7 +52,7 @@ const Tracker3 = () => {
   );
 
   return (
-    <div>
+    <div className="w-full p-[5px] overflow-scroll">
       <div className="font-poppins text-[#2b2a69] text-2xl font-bold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
         <h1>Top 10 Country wise Covid-19 Updates - Tiles</h1>
       </div>
@@ -60,28 +60,28 @@ const Tracker3 = () => {
       <table className="font-poppins w-[100%] bg-light">
         <thead>
           <tr>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-semibold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
               <h4>Top Cases</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-semibold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
               <h4>Today Cases</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-semibold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
               <h4>Top Deaths</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-semibold text-left pb-[10px] pl-[10px] mt-[15px] mb-[15px]">
               <h4>Today Deaths</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-semibold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
               <h4>Top Active</h4>
             </th>
-            <th className="font-poppins text-[#2b2a69] text-lg font-bold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
+            <th className="font-poppins text-[#2b2a69] text-lg font-semibold text-left mb-[10px] pb-[10px] pl-[15px] mt-[15px]">
               <h4>Top Recovered</h4>
             </th>
           </tr>
         </thead>
         <tbody className="text-textBlue">
-          <tr>
+          <tr className="align-baseline">
             {renderColumn(topCases, "cases")}
             {renderColumn(topTodayCases, "todayCases")}
             {renderColumn(topDeaths, "deaths")}
