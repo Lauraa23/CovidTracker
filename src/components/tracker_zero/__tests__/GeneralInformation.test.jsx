@@ -1,4 +1,4 @@
-import { render, screen, prettyDOM, within } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import GeneralInformation from "../GeneralInformation";
 import mockUseApi from "../../../services/useApi";
 
