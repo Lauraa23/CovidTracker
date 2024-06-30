@@ -1,11 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
-import TrackerOne from "./TrackerOne";
-import useApi from "../../services/useApi";
+import "@testing-library/jest-dom";
+import TrackerOne from "../components/tracker1/TrackerOne";
+import useApi from "../services/useApi";
 
-// Mock the useApi hook
-jest.mock("../../services/useApi");
+jest.mock("../services/useApi");
 
 const mockAllData = {
   cases: 1000,
