@@ -6,7 +6,7 @@ const GeneralInformation = () => {
   const data = useApi(`${API_BASE_URL}/all`);
 
   if (!data) {
-    return <p>Cargando ...</p>;
+    return <p>Loading...</p>;
   }
 
   return (

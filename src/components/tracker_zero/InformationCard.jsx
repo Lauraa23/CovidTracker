@@ -25,7 +25,10 @@ const InformationCard = ({ title, cases, todayCases, variant }) => {
   let banner;
   if (variant !== "active-case") {
     banner = (
-      <b className="xl:float-right xl:relative xl:top-0 xl:right-0 text-xs text-steel bg-white p-1 mr-2 rounded tracking-wide lg:float-none lg:absolute lg:right-[10px] lg:top-[20px]">
+      <b
+        data-testid="banner"
+        className="xl:float-right xl:relative xl:top-0 xl:right-0 text-xs text-steel bg-white p-1 mr-2 rounded tracking-wide lg:float-none lg:absolute lg:right-[10px] lg:top-[20px]"
+      >
         +{todayCases}
       </b>
     );

@@ -6,7 +6,7 @@ const TopCountries = () => {
   const topCountriesData = useApi(`${API_BASE_URL}/countries?sort=deaths`);
 
   if (!topCountriesData) {
-    return <p>Cargando ...</p>;
+    return <p>Loading...</p>;
   }
 
   const topCountries = topCountriesData.slice(0, 10).map((country) => {
