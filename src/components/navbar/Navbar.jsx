@@ -25,84 +25,84 @@ const Navbar = () => {
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/1"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="[&.active]:bg-primary hover:bg-primary [&.active]:text-white hover:text-white text-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-warning"></span>
-              <i className="ti-pie-chart group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-pie-chart text-inherit text-2xl relative top-1"></i>
             </NavLink>
           </li>
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/2"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="[&.active]:bg-primary hover:bg-primary [&.active]:text-white hover:text-white text-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
               <span className="block w-2 h-2 rounded-lg absolute top-1 right-1 bg-red"></span>
-              <i className="ti-view-list group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-view-list group-hover:text-white text-inherit text-2xl relative top-1"></i>
             </NavLink>
           </li>
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/3"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="[&.active]:bg-primary hover:bg-primary [&.active]:text-white hover:text-white text-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-view-grid group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-view-grid group-hover:text-white text-inherit text-2xl relative top-1"></i>
             </NavLink>
           </li>
           <li className="group mx-1 my-5 p-0 text-center">
             <NavLink
               to="/trackers/4"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="[&.active]:bg-primary hover:bg-primary [&.active]:text-white hover:text-white text-primary rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-layout-tab group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-layout-tab text-inherit text-2xl relative top-1"></i>
             </NavLink>
           </li>
           {/* links inhabilitados */}
-          <li className="group mx-1 my-5 p-0 text-center">
+          <li className=" mx-1 my-5 p-0 text-center">
             <div
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-layers-alt group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-layers-alt text-primary text-2xl relative top-1"></i>
             </div>
           </li>
-          <li className="group mx-1 my-5 p-0 text-center">
+          <li className=" mx-1 my-5 p-0 text-center">
             <div
               to="/"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-stats-up group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-stats-up text-primary text-2xl relative top-1"></i>
             </div>
           </li>
-          <li className="group mx-1 my-5 p-0 text-center">
+          <li className=" mx-1 my-5 p-0 text-center">
             <div
               to="/"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-world group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-world text-primary text-2xl relative top-1"></i>
             </div>
           </li>
-          <li className="group flex-auto mx-1 my-5 p-0 text-center">
+          <li className=" flex-auto mx-1 my-5 p-0 text-center">
             <div
               to="/"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-comment group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-comment text-primary text-2xl relative top-1"></i>
             </div>
           </li>
-          <li className="group mx-1 my-5 p-0 text-center">
+          <li className=" mx-1 my-5 p-0 text-center">
             <div
               to="/"
-              className="hover:bg-primary rounded-lg text-center px-4 py-3 outline-none relative"
+              className="rounded-lg text-center px-4 py-3 outline-none relative"
               data-tab="chats"
             >
-              <i className="ti-flickr-alt group-hover:text-white text-primary text-2xl relative top-1"></i>
+              <i className="ti-flickr-alt text-primary text-2xl relative top-1"></i>
             </div>
           </li>
         </ul>
