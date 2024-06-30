@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import $ from "jquery";
 import "datatables.net";
 import "./tracker2.css";
@@ -6,21 +6,7 @@ import { API_BASE_URL } from "../../config/urls";
 import useApi from "../../services/useApi";
 
 const Tracker2 = () => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-  const dataTableRef = useRef(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await useApi(`${API_BASE_URL}/countries`);
-        setData(response);
-      } catch (err) {
-        setError(err.message);
-      }
-    };
-    fetchData();
-  }, []);
+  const data = useApi(`${API_BASE_URL}/countries`);
 
   useEffect(() => {
     if (data && data.length > 0) {
@@ -45,20 +31,8 @@ const Tracker2 = () => {
           return `Showing ${start} to ${end} of ${total} entries`;
         },
       });
-
-      dataTableRef.current = $(tableId);
     }
-
-    return () => {
-      if (dataTableRef.current) {
-        dataTableRef.current.DataTable().destroy(true);
-      }
-    };
   }, [data]);
-
-  if (error) {
-    return <p>{error}</p>;
-  }
 
   if (!data) {
     return <p>Cargando ...</p>;
@@ -84,9 +58,8 @@ const Tracker2 = () => {
               id="CountryStatsDataTable"
               className="h-[70%]"
               style={{ width: "100%" }}
-              data-testid="CountryStatsDataTable" 
             >
-              <thead className="text-navyBlue">
+              <thead className="text-navyBlue hover:cursor-pointer">
                 <tr>
                   <th>Flag</th>
                   <th>Country</th>
@@ -100,7 +73,7 @@ const Tracker2 = () => {
                   <th>Tested</th>
                 </tr>
               </thead>
-              <tbody className="text-textBlue">
+              <tbody className="text-textBlue hover:cursor-pointer">
                 {data.map((country) => (
                   <tr key={country.country}>
                     <td>
@@ -108,7 +81,6 @@ const Tracker2 = () => {
                         <img
                           src={`https://disease.sh/assets/img/flags/${country.countryInfo.iso2.toLowerCase()}.png`}
                           className="w-[30px]"
-                          alt={`${country.country} flag`}
                         />
                       ) : (
                         ""
