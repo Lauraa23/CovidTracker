@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import $ from "jquery";
 import "datatables.net";
 import "./tracker2.css";
@@ -6,19 +6,30 @@ import { API_BASE_URL } from "../../config/urls";
 import useApi from "../../services/useApi";
 
 const Tracker2 = () => {
-  const data = useApi(`${API_BASE_URL}/countries`);
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
   const dataTableRef = useRef(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await useApi(`${API_BASE_URL}/countries`);
+        setData(response);
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+    fetchData();
+  }, []);
 
   useEffect(() => {
     if (data && data.length > 0) {
       const tableId = "#CountryStatsDataTable";
 
-      // Destruir DataTable si ya existe
       if ($.fn.DataTable.isDataTable(tableId)) {
         $(tableId).DataTable().destroy();
       }
 
-      // Crear DataTable
       $(tableId).DataTable({
         paging: true,
         pageLength: 10,
@@ -35,17 +46,19 @@ const Tracker2 = () => {
         },
       });
 
-      // Guardar referencia al elemento DataTable
       dataTableRef.current = $(tableId);
     }
 
     return () => {
-      // Limpiar DataTable al desmontar
       if (dataTableRef.current) {
         dataTableRef.current.DataTable().destroy(true);
       }
     };
   }, [data]);
+
+  if (error) {
+    return <p>{error}</p>;
+  }
 
   if (!data) {
     return <p>Cargando ...</p>;
@@ -71,7 +84,7 @@ const Tracker2 = () => {
               id="CountryStatsDataTable"
               className="h-[70%]"
               style={{ width: "100%" }}
-              data-testid="CountryStatsDataTable" // Agregar data-testid para la prueba
+              data-testid="CountryStatsDataTable" 
             >
               <thead className="text-navyBlue">
                 <tr>
