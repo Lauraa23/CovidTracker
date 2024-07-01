@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Card, { CardTitle, CardData, CardImage } from "../card/Card";
 import { TotalCases } from "./TotalCases";
 import { TotalDeaths } from "./TotalDeaths";
-// import "./trackerOne.css";
 import { NewCases } from "./NewCases";
 import { NewDeaths } from "./NewDeaths";
 import { TotalRecovered } from "./TotalRecovered";
