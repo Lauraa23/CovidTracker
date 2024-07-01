@@ -2,66 +2,66 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-[#1b2a4e]">
-        <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 items-center">
-          <div>
-            <img className="w-20" src="/assets/images/logo-white.png" />
-            <p className="text-sm text-[0.6rem] text-[#fff] mb-4 font-[0.5rem]">
-              These droplets can land on objects and surfaces around the person
-              such as tables, doorknobs and handrails.
-            </p>
-            <ul className="flex mt-4 sm:justify-start md:mt-0 space-x-1 rtl:space-x-reverse list-none">
-              <li>
-                <i className="ti-facebook bg-[#293f73] text-[#fff] p-[3px] rounded-[10px]"></i>
-              </li>
-              <li>
-                <i className="ti-twitter-alt bg-[#293f73] text-[#fff] p-[3.5px] rounded-[10px]"></i>
-              </li>
-              <li>
-                <i className="ti-linkedin bg-[#293f73] text-[#fff] p-[3.5px] rounded-[10px]"></i>
-              </li>
-              <li>
-                <i className="ti-youtube bg-[#293f73] text-[#fff] p-[3.5px] rounded-[10px]"></i>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white hover:underline">
-              Quick Links
-            </h4>
-            <p className="text-[0.75rem] text-[#fff]">Prevention</p>
-            <p className="text-[0.75rem] text-[#fff]">Qurantine</p>
-            <p className="text-[0.75rem] text-[#fff]">About</p>
-            <p className="text-[0.75rem] text-[#fff]">Help</p>
-          </div>
-          <div>
-            <h4 className="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
-              About
-            </h4>
-            <p className="text-[0.75rem] text-[#fff]">Hand Wash</p>
-            <p className="text-[0.75rem] text-[#fff]">Social Distance</p>
-            <p className="text-[0.75rem] text-[#fff]">Isolate</p>
-            <p className="text-[0.75rem] text-[#fff]">Difference</p>
-          </div>
-          <div>
-            <h4 className="mb-6 text-sm font-semibold text-gray-900 text-[1rem] dark:text-white">
-              Help
-            </h4>
-            <p className="text-[0.75rem] text-[#fff]">Hand Wash</p>
-            <p className="text-[0.75rem] text-[#fff]">Social Distance</p>
-            <p className="text-[0.75rem] text-[#fff]">Isolate</p>
-            <p className="text-[0.75rem] text-[#fff]">Difference</p>
-          </div>
-        </div>
-        <div className="lowerFooter w-full flex flex-row justify-around px-0 py-[5px] border-t-[#223461] border-t border-solid bg-[#1b2a4e]">
-          <p className="text-[0.6rem] text-white">
-            © Copyright 2020. All Rights Reserved
+    <footer className="bg-[#1b2a4e] text-white">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 py-6 lg:py-8">
+        <div className="flex flex-col items-start">
+          <img
+            className="w-20 mb-4"
+            src="/assets/images/logo-white.png"
+            alt="Logo"
+          />
+          <p className="text-sm mb-4">
+            These droplets can land on objects and surfaces around the person
+            such as tables, doorknobs and handrails.
           </p>
-          <p className="text-[0.6rem] text-white">Design by COVIDongas</p>
+          <ul className="flex mt-4 space-x-1">
+            <li>
+              <i className="ti-facebook bg-[#293f73] text-white p-2 rounded-lg"></i>
+            </li>
+            <li>
+              <i className="ti-twitter-alt bg-[#293f73] text-white p-2 rounded-lg"></i>
+            </li>
+            <li>
+              <i className="ti-linkedin bg-[#293f73] text-white p-2 rounded-lg"></i>
+            </li>
+            <li>
+              <i className="ti-youtube bg-[#293f73] text-white p-2 rounded-lg"></i>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </>
+        <div>
+          <h4 className="mb-4 text-sm font-semibold">Quick Links</h4>
+          <ul>
+            <li className="text-sm mb-2">Prevention</li>
+            <li className="text-sm mb-2">Quarantine</li>
+            <li className="text-sm mb-2">About</li>
+            <li className="text-sm">Help</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-4 text-sm font-semibold">About</h4>
+          <ul>
+            <li className="text-sm mb-2">Hand Wash</li>
+            <li className="text-sm mb-2">Social Distance</li>
+            <li className="text-sm mb-2">Isolate</li>
+            <li className="text-sm">Difference</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-4 text-sm font-semibold">Help</h4>
+          <ul>
+            <li className="text-sm mb-2">Hand Wash</li>
+            <li className="text-sm mb-2">Social Distance</li>
+            <li className="text-sm mb-2">Isolate</li>
+            <li className="text-sm">Difference</li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex flex-col sm:flex-row justify-between items-center px-4 py-3 border-t border-[#223461]">
+        <p className="text-xs">© Copyright 2020. All Rights Reserved</p>
+        <p className="text-xs">Design by COVIDongas</p>
+      </div>
+    </footer>
   );
 };
 
