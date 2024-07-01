@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import TrackerOne from "../TrackerOne";
+import TrackerOne from "../../tracker1/TrackerOne";
 import useApi from "../../../services/useApi";
 
 jest.mock("../../../services/useApi");
