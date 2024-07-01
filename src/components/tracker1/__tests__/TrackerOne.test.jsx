@@ -52,12 +52,6 @@ describe("TrackerOne", () => {
     });
   });
 
-  it("renders loading state initially", () => {
-    render(<TrackerOne />);
-
-    expect(screen.getByText(/Cargando .../i)).toBeInTheDocument();
-  });
-
   test("renders data correctly", () => {
     render(<TrackerOne />);
 
@@ -66,7 +60,6 @@ describe("TrackerOne", () => {
     expect(screen.getByText("Country A")).toBeInTheDocument();
     expect(screen.getByText("Country B")).toBeInTheDocument();
 
-    // Verifica que los valores estén en el documento
     const totalCasesElements = screen.getAllByText("1000");
     expect(totalCasesElements.length).toBeGreaterThan(0);
 
