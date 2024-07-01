@@ -14,8 +14,8 @@ const Prevent = () => {
             Best way to prevent is avoid virus.
           </h3>
         </div>
-        <div className="preventWrapperContainer flex flex-wrap items-center justify-center">
-          <div className="preventCardsLeft flex flex-col w-2/5">
+        <div className="preventWrapperContainer grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center py-10">
+          <div className="preventCardsLeft flex flex-col">
             <div className="preventExplanation flex gap-5 items-center text-left">
               <div className="mainImageContainer flex flex-col items-center justify-center w-2/5">
                 <div className="hexImageContainer h-[5em] relative w-[7em] bg-white mx-0 my-[4em] before:content-[''] before:h-0 before:absolute before:top-[-2em] before:w-0 before:border-b-[2em] before:border-b-white before:border-x-[3.4641em] before:border-x-transparent before:border-solid before:inset-x-0 after:bottom-[-2em] after:content-[''] after:h-0 after:absolute after:w-0 after:border-t-[2em] after:border-t-white after:border-x-[3.4641em] after:border-x-transparent after:border-solid after:inset-x-0"></div>
@@ -77,7 +77,7 @@ const Prevent = () => {
               </div>
             </div>
           </div>
-          <div className="preventCardsRight flex flex-col w-2/5 m-5">
+          <div className="preventCardsRight flex flex-col">
             <div className="preventExplanation flex gap-5 items-center text-left">
               <div className="mainImageContainer flex flex-col items-center justify-center w-2/5 transition-transform duration-[0.3s] ease-[ease]">
                 <div className="hexImageContainer h-[5em] relative w-[7em] bg-white mx-0 my-[4em] before:content-[''] before:h-0 before:absolute before:top-[-2em] before:w-0 before:border-b-[2em] before:border-b-white before:border-x-[3.4641em] before:border-x-transparent before:border-solid before:inset-x-0 after:bottom-[-2em] after:content-[''] after:h-0 after:absolute after:w-0 after:border-t-[2em] after:border-t-white after:border-x-[3.4641em] after:border-x-transparent after:border-solid after:inset-x-0"></div>
@@ -132,7 +132,7 @@ const Prevent = () => {
                 </h4>
                 <p className="text-sm text-start text-[#262f5a]">
                   Our comprehensive Online Marketing strategy will boost your
-                  website trafic hence monthly sales.
+                  website traffic hence monthly sales.
                 </p>
               </div>
             </div>

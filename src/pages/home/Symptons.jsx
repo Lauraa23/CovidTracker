@@ -14,8 +14,8 @@ const Symptoms = () => {
             Basic Symptom Against Coronavirus
           </h3>
         </div>
-        <div className="symptomCarousel flex flex-row items-center justify-center">
-          <div className="symptomCard bg-white shadow-[0_30px_60px_#0000001a] flex flex-col items-start m-[30px] px-5 py-5 rounded-[10px] w-[25vw]">
+        <div className="symptomCarousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center py-10">
+          <div className="symptomCard bg-white shadow-[0_30px_60px_#0000001a] flex flex-col items-start px-5 py-5 rounded-[10px] w-[80vw] md:w-[40vw] lg:w-[25vw]">
             <span>
               <img
                 className="w-20"
@@ -32,7 +32,7 @@ const Symptoms = () => {
               least 100
             </p>
           </div>
-          <div className="symptomCard bg-white shadow-[0_30px_60px_#0000001a] flex flex-col items-start m-[30px] px-5 py-5 rounded-[10px] w-[25vw]">
+          <div className="symptomCard bg-white shadow-[0_30px_60px_#0000001a] flex flex-col items-start px-5 py-5 rounded-[10px] w-[80vw] md:w-[40vw] lg:w-[25vw]">
             <span>
               <img
                 className="w-20"
@@ -46,7 +46,7 @@ const Symptoms = () => {
               with difficulty breathing/shortness of breath.
             </p>
           </div>
-          <div className="symptomCard bg-white shadow-[0_30px_60px_#0000001a] flex flex-col items-start m-[30px] px-5 py-5 rounded-[10px] w-[25vw]">
+          <div className="symptomCard bg-white shadow-[0_30px_60px_#0000001a] flex flex-col items-start px-5 py-5 rounded-[10px] w-[80vw] md:w-[40vw] lg:w-[25vw]">
             <span>
               <img
                 className="w-20"
